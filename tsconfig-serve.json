@@ -1,26 +1,26 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "declaration": false,
-        "moduleResolution": "node",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "target": "es5",
-        "types": [
-            "node"
-        ],
-        "lib": [
-            "es2016",
-            "es2017",
-            "es2018",
-            "dom"
-        ]
-    },
-    "include": [
-        "main.ts"
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "types": [
+      "node"
     ],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
+    "lib": [
+      "es2016",
+      "es2017",
+      "es2018",
+      "dom"
     ]
+  },
+  "include": [
+    "main.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
 }

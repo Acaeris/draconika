@@ -3,15 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
 
-const routes: Routes = [
-    {
-        path: '',
-        component: HomeComponent
-    }
-];
+const routes: Routes = [{
+  path: '',
+  component: HomeComponent
+}];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {useHash: true})],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, {
+    useHash: true
+  })],
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,10 +1,13 @@
 {
-    "PAGES": {
-        "HOME": {
-            "TITLE": "App works !"
-        }
-    },
-    "WINDOW": {
-        "TITLE": "Draconika"
+  "PAGES": {
+    "HOME": {
+      "TITLE": "App works !"
     }
+  },
+  "WINDOW": {
+    "TITLE": "Draconika"
+  },
+  "CONSOLE": {
+    "TEST": "> Test Message"
+  }
 }

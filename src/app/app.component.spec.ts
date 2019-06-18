@@ -5,29 +5,28 @@ import { ElectronService } from './providers/electron.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 describe('AppComponent', () => {
-    beforeEach(async(() => {
-        TestBed.configureTestingModule({
-            declarations: [
-                AppComponent
-            ],
-            providers: [
-                ElectronService
-            ],
-            imports: [
-                RouterTestingModule,
-                TranslateModule.forRoot()
-            ]
-        }).compileComponents();
-    }));
+  beforeEach(async (() => {
+    TestBed.configureTestingModule({
+      declarations: [
+        AppComponent
+      ],
+      providers: [
+        ElectronService
+      ],
+      imports: [
+        RouterTestingModule,
+        TranslateModule.forRoot()
+      ]
+    }).compileComponents();
+  }));
 
-    it('should create the app', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
-    });
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
+  });
 });
 
 class TranslateServiceStub {
-    setDefaultLang(lang: string): void {
-    }
+  setDefaultLang(lang: string): void {}
 }

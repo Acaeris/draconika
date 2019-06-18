@@ -1,0 +1,9 @@
+.ui.app.window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > router-outlet {
+    flex: 1;
+  }
+}
