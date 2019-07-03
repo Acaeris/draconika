@@ -1,0 +1,142 @@
+{
+  "init": "[format]",
+  "parts": {
+    "format": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "The heirloom is [heirloom] made of [material] that once belonged to [owner]" },
+        { "value": "The heirloom was once owned by [owner] and is [heirloom] made of [material]" },
+        { "value": "[heirloom], once possesed by [owner], now an heirloom. It is made of [material]." }
+      ]
+    }],
+    "heirloom": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "[jewellery]" },
+        { "value": "a carving of [carving]" },
+        { "value": "[art]" },
+        { "value": "[furniture]" },
+        { "value": "[musicalInstrument]" },
+        { "value": "[weapon]" },
+        { "value": "[armor]" },
+        { "value": "[tool]" }
+      ]
+    }],
+    "jewellery": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a broach" },
+        { "value": "a necklace" },
+        { "value": "a ring" },
+        { "value": "an earring" },
+        { "value": "a gem" },
+        { "value": "a monocle" }
+      ]
+    }],
+    "carving": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a family member" },
+        { "value": "an animal" },
+        { "value": "nothing in particular" },
+        { "value": "a flower" }
+      ]
+    }],
+    "art": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a painting" },
+        { "value": "a vase" },
+        { "value": "a rug" },
+        { "value": "a tapestry" }
+      ]
+    }],
+    "furniture": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a wardrobe" },
+        { "value": "a couch" },
+        { "value": "a table" },
+        { "value": "a chair" },
+        { "value": "a mirror" },
+        { "value": "a clock" }
+      ]
+    }],
+    "musicalInstrument": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a piano" },
+        { "value": "a lute" },
+        { "value": "a flute" },
+        { "value": "a harp" }
+      ]
+    }],
+    "weapon": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a sword" },
+        { "value": "an axe" },
+        { "value": "a lance" },
+        { "value": "a dagger" },
+        { "value": "a morningstar" },
+        { "value": "a mace" },
+        { "value": "a bow" },
+        { "value": "a crossbow" }
+      ]
+    }],
+    "armor": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a shield" },
+        { "value": "a helmet" },
+        { "value": "a breastplate" },
+        { "value": "some bracers" }
+      ]
+    }],
+    "tool": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "a rake" },
+        { "value": "a shovel" },
+        { "value": "a rolling pin" },
+        { "value": "a hatchet" },
+        { "value": "a staff" },
+        { "value": "a frying pan" },
+        { "value": "a tea pot" },
+        { "value": "a silverware" }
+      ]
+    }],
+    "owner": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "the owner's mother ([name.format])" },
+        { "value": "the owner's father ([name.format])" },
+        { "value": "the owner's grandmother ([name.format])" },
+        { "value": "the owner's grandfather ([name.format])" },
+        { "value": "a long lost relative ([name.format])" },
+        { "value": "someone else, handed down through generations" },
+        { "value": "a noble ([name.format])" },
+        { "value": "a foreigner ([name.format])" },
+        { "value": "a god" },
+        { "value": "the family's patron" }
+      ]
+    }],
+    "material": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "wood" },
+        { "value": "gold" },
+        { "value": "silver" },
+        { "value": "bronze" },
+        { "value": "copper" },
+        { "value": "steel" },
+        { "value": "iron" },
+        { "value": "mithril" },
+        { "value": "tin" },
+        { "value": "adamantine" },
+        { "value": "an unknown material" },
+        { "value": "brass" }
+      ]
+    }]
+  }
+}

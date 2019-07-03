@@ -20,6 +20,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { WindowTitleComponent } from './components/window-title/window-title.component';
 import { ConsoleComponent } from './components/console/console.component';
+import { TableService } from './providers/table.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -49,7 +50,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ],
   providers: [
-    ElectronService
+    ElectronService,
+    TableService
   ],
   bootstrap: [
     AppComponent

@@ -1,0 +1,397 @@
+{
+  "init": "[format]",
+  "parts": {
+    "format": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "[title] [firstName] [lastName]", "chance": 10 },
+        { "value": "[firstName] [lastName]", "chance": 10 },
+        { "value": "[firstName][suffix]" },
+        { "value": "[profession] [firstName]", "chance": 3 },
+        { "value": "[profession] [lastName]" },
+        { "value": "[profession] [firstName] [lastName]" }
+      ]
+    }, {
+      "restrictions": {
+        "race": "human"
+      },
+      "entries": [
+        { "value": "[title] [firstName] [lastName]-[lastName]" },
+        { "value": "[firstName] [lastName]-[lastName]" },
+        { "value": "[profession] [lastName]-[lastName]" },
+        { "value": "[profession] [lastName]-[lastName] "}
+      ]
+    }],
+    "title": [{
+      "restrictions": {
+        "gender": "male"
+      },
+      "entries": [
+        { "value": "Mr", "chance": 5 },
+        { "value": "Sir" },
+        { "value": "Lord" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": "female"
+      },
+      "entries": [
+        { "value": "Miss", "chance": 3 },
+        { "value": "Mrs", "chance": 3 },
+        { "value": "Ms", "chance": 2 },
+        { "value": "Lady" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": "neutral"
+      },
+      "entries": [
+        { "value": "Mx", "chance": 10 }
+      ]
+    }, {
+      "restrictions": {},
+      "entries": [
+        { "value": "Dr" },
+        { "value": "General" }
+      ]
+    }],
+    "profession": [{
+      "restrictions": {},
+      "entries": [
+        { "value": "Apprentice" },
+        { "value": "Archdruid" },
+        { "value": "Archivist" },
+        { "value": "Archmagister" },
+        { "value": "First Mate" },
+        { "value": "Galley Chief" },
+        { "value": "Innkeeper" },
+        { "value": "Lorekeeper" },
+        { "value": "Mariner" },
+        { "value": "Protector" },
+        { "value": "Second Mate" },
+        { "value": "Sentinel" },
+        { "value": "Squallshaper" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": "male"
+      },
+      "entries": [
+        { "value": "Father" },
+        { "value": "Prince" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": "female"
+      },
+      "entries": [
+        { "value": "Mother" },
+        { "value": "Priestess" },
+        { "value": "Princess" }
+      ]
+    }],
+    "firstName": [{
+      "restrictions": {
+        "gender": "male",
+        "race": "human"
+      },
+      "entries": [
+        { "value": "Adam" },
+        { "value": "Alan" },
+        { "value": "Connor" },
+        { "value": "Daniel" },
+        { "value": "Douglas" },
+        { "value": "Dwayne" },
+        { "value": "Edward" },
+        { "value": "Elliot" },
+        { "value": "Eston" },
+        { "value": "Gabe" },
+        { "value": "Gabriel" },
+        { "value": "Gordon" },
+        { "value": "Greg" },
+        { "value": "Gregory" },
+        { "value": "Jacob" },
+        { "value": "Jeremy" },
+        { "value": "Joe" },
+        { "value": "John" },
+        { "value": "Joseph" },
+        { "value": "Ken" },
+        { "value": "Kevin" },
+        { "value": "Mark" },
+        { "value": "Martin" },
+        { "value": "Matt" },
+        { "value": "Matthew" },
+        { "value": "Michael" },
+        { "value": "Nathan" },
+        { "value": "Nathaniel" },
+        { "value": "Pete" },
+        { "value": "Peter" },
+        { "value": "Sammy" },
+        { "value": "Samuel" },
+        { "value": "Tim" },
+        { "value": "Timothy" },
+        { "value": "Tom" },
+        { "value": "Torbjorn" },
+        { "value": "Warren" },
+        { "value": "Winston" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": "female",
+        "race": "human"
+      },
+      "entries": [
+        { "value": "Amy" },
+        { "value": "Angela" },
+        { "value": "Anna" },
+        { "value": "Annabelle" },
+        { "value": "Annie" },
+        { "value": "Astrid" },
+        { "value": "Brigitte" },
+        { "value": "Caitlyn" },
+        { "value": "Eleanor" },
+        { "value": "Elly" },
+        { "value": "Elspeth" },
+        { "value": "Hanna" },
+        { "value": "Hannah" },
+        { "value": "Jane" },
+        { "value": "Janet" },
+        { "value": "Jen" },
+        { "value": "Jennifer" },
+        { "value": "Kate" },
+        { "value": "Katie" },
+        { "value": "Lana" },
+        { "value": "Laura" },
+        { "value": "Lily" },
+        { "value": "Lisa" },
+        { "value": "Natalie" },
+        { "value": "Pam" },
+        { "value": "Pamela" },
+        { "value": "Vera" }
+      ]
+    }, {
+      "restrictions": {
+        "race": "human"
+      },
+      "entries": [
+        { "value": "Sam" },
+        { "value": "Terry" }
+      ]
+    }, {
+      "restrictions": {
+        "race": "kaldorei",
+        "gender": "male"
+      },
+      "entries": [
+        { "value": "Albagorn" },
+        { "value": "Alegorn" },
+        { "value": "Alindoris" },
+        { "value": "Altruis" },
+        { "value": "Anketh" },
+        { "value": "Arktos" },
+        { "value": "Arminon" },
+        { "value": "Arvell" },
+        { "value": "Auran" },
+        { "value": "Azj'Tordin" },
+        { "value": "Baelir" },
+        { "value": "Balren" },
+        { "value": "Barathex" },
+        { "value": "Baristolth" },
+        { "value": "Boahn" },
+        { "value": "Bolyun" },
+        { "value": "Braxis" },
+        { "value": "Bretander" },
+        { "value": "Broll" },
+        { "value": "Caelyb" },
+        { "value": "Cahill" },
+        { "value": "Caynrus" },
+        { "value": "Celmoridan" },
+        { "value": "Chaewel" },
+        { "value": "Chardryn" },
+        { "value": "Darnath" },
+        { "value": "Elandris" },
+        { "value": "Elerion" },
+        { "value": "Estulan" },
+        { "value": "Foriel" },
+        { "value": "Illidan" },
+        { "value": "Javan" },
+        { "value": "Latro" },
+        { "value": "Lyrathos" },
+        { "value": "Malfurion" },
+        { "value": "Oso" },
+        { "value": "Rembar" },
+        { "value": "Talian" }
+      ]
+    }, {
+      "restrictions": {
+        "race": "kaldorei",
+        "gender": "female"
+      },
+      "entries": [
+        { "value": "Aelerya" },
+        { "value": "Aeolyn" },
+        { "value": "Aeolynn" },
+        { "value": "Aethalas" },
+        { "value": "Ainethil" },
+        { "value": "Al'lanora" },
+        { "value": "Alathea" },
+        { "value": "Aldana" },
+        { "value": "Aldorei" },
+        { "value": "Aliastra" },
+        { "value": "Alinya" },
+        { "value": "Allyndia" },
+        { "value": "Allysa" },
+        { "value": "Alunwea" },
+        { "value": "Aluwyn" },
+        { "value": "Alwynn" },
+        { "value": "Amarassan" },
+        { "value": "Amberline" },
+        { "value": "Anessa" },
+        { "value": "Anyndra" },
+        { "value": "Aradria" },
+        { "value": "Arko'narin" },
+        { "value": "Arnaera" },
+        { "value": "Arias'ta" },
+        { "value": "Arya" },
+        { "value": "Aryenda" },
+        { "value": "Arynia" },
+        { "value": "Aszune" },
+        { "value": "Athramanis" },
+        { "value": "Atropa" },
+        { "value": "Avana" },
+        { "value": "Avanthera" },
+        { "value": "Aynasha" },
+        { "value": "Ayriala" },
+        { "value": "Azshara" },
+        { "value": "Beth'Amara" },
+        { "value": "Breena" },
+        { "value": "Byancie" },
+        { "value": "Calandrath" },
+        { "value": "Caoileann" },
+        { "value": "Caranne" },
+        { "value": "Cerwyn" },
+        { "value": "Ceyora" },
+        { "value": "Cherwina" },
+        { "value": "Chylina" },
+        { "value": "Ciana" },
+        { "value": "Cilieth" },
+        { "value": "Cordressa" },
+        { "value": "Emi" },
+        { "value": "Eridan" },
+        { "value": "Fleuris" },
+        { "value": "Guviena" },
+        { "value": "Hannah" },
+        { "value": "Illestria" },
+        { "value": "Kathia" },
+        { "value": "Kor'vas" },
+        { "value": "Lania" },
+        { "value": "Lyessa" },
+        { "value": "Maiev" },
+        { "value": "Marin" },
+        { "value": "Naron" },
+        { "value": "Nivara"},
+        { "value": "Rylissa" },
+        { "value": "Sana" },
+        { "value": "Telandria" },
+        { "value": "Tyrande" },
+        { "value": "Vestia" }
+      ]
+    }, {
+      "restrictions": {
+        "race": "kaldorei"
+      },
+      "entries": [
+        { "value": "Arlen" }
+      ]
+    }],
+    "lastName": [{
+      "restrictions": {
+        "race": "human"
+      },
+      "entries": [
+        { "value": "Addams" },
+        { "value": "Churchill" },
+        { "value": "Cunningham" },
+        { "value": "Edwards" },
+        { "value": "Glasman" },
+        { "value": "Gregory" },
+        { "value": "Hodgins" },
+        { "value": "Hodgkins" },
+        { "value": "Hunt" },
+        { "value": "Jackson" },
+        { "value": "Johnson" },
+        { "value": "Kidman" },
+        { "value": "Lindholm" },
+        { "value": "McCoy" },
+        { "value": "McHugh" },
+        { "value": "Newman" },
+        { "value": "Osborne" },
+        { "value": "Portman" },
+        { "value": "Reyes" },
+        { "value": "Smith" },
+        { "value": "Stewart" },
+        { "value": "Tompkins" },
+        { "value": "Wells" },
+        { "value": "Western" }
+      ]
+    }, {
+      "restrictions": {
+        "race": "kaldorei"
+      },
+      "entries": [
+        { "value": "Abiectus" },
+        { "value": "Amberwind" },
+        { "value": "Asterleaf" },
+        { "value": "Autumnlight" },
+        { "value": "Bearmantle" },
+        { "value": "Bearsong" },
+        { "value": "Bellanne" },
+        { "value": "Bladebender" },
+        { "value": "Bladedancer" },
+        { "value": "Bladeleaf" },
+        { "value": "Bladesinger" },
+        { "value": "Bladesong" },
+        { "value": "Bladewhisper" },
+        { "value": "Bladewing" },
+        { "value": "Bloodletter" },
+        { "value": "Bloodthorn" },
+        { "value": "Bloomthistle" },
+        { "value": "Bloomwatcher" },
+        { "value": "Bluewind" },
+        { "value": "Bowleaf" },
+        { "value": "Bramblescar" },
+        { "value": "Briarbow" },
+        { "value": "Brightgrass" },
+        { "value": "Broadleaf" },
+        { "value": "Brunet" },
+        { "value": "Clawthorn" },
+        { "value": "Cloudflyer" },
+        { "value": "Cloudsbreak" },
+        { "value": "Dawnblade" },
+        { "value": "Dawnstrider" },
+        { "value": "Feathermoon" },
+        { "value": "Scarletleaf" },
+        { "value": "Shadowsong" },
+        { "value": "Stormrage" },
+        { "value": "Swiftblade" },
+        { "value": "Whisperwind" }
+      ]
+    }],
+    "suffix": [{
+      "restrictions": "",
+      "entries": [
+        { "value": ", Knight Errant" },
+        { "value": ", Undeath's Hand" },
+        { "value": " of the Claw" },
+        { "value": " of the Shifting Sands" },
+        { "value": " of the Talon" },
+        { "value": " the Patient" },
+        { "value": " the Reaper" },
+        { "value": " the Silent" },
+        { "value": " the Sleeper" },
+        { "value": " the Sufferer" },
+        { "value": " the Vile" }
+      ]
+    }]
+  }
+}

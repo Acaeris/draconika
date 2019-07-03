@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TableService } from '../../providers/table.service';
+import { RollCollection } from '../../models/roll-collection';
+import { Restrictions } from '../../models/restrictions';
 
 @Component({
   selector: 'app-console',
@@ -6,7 +9,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./console.component.scss']
 })
 export class ConsoleComponent implements OnInit {
-  constructor() {}
+  output: string[] = [];
+  restrictions: Restrictions = {};
+  collection: RollCollection;
+  rolling = 'name';
 
-  ngOnInit() {}
+  constructor(private tableService: TableService) {}
+
+  ngOnInit() {
+    this.restrictions = {
+      gender: 'female',
+      race: 'kaldorei'
+    };
+
+    this.update();
+  }
+
+  update() {
+    this.tableService.roll(this.rolling, this.restrictions).subscribe(
+      data => this.output.push(data),
+      error => console.log(error)
+    );
+  }
 }

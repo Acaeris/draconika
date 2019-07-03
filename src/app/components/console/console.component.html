@@ -1,3 +1,8 @@
 <div class="ui console">
-  {{ 'CONSOLE.TEST' | translate }}
+  <p>
+    {{ 'CONSOLE.TEST' | translate }} {{ rolling }}
+    <i (click)="update()" class="sync alternate icon"></i><br />
+    Restricted to: <span *ngFor="let res of restrictions | keyvalue">{{ res.key }} = {{ res.value }} </span>
+  </p>
+  <span *ngFor="let entry of output">{{ entry }}<br /></span>
 </div>
