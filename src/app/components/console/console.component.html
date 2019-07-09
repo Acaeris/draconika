@@ -1,8 +1,37 @@
 <div class="ui console">
-  <p>
-    {{ 'CONSOLE.TEST' | translate }} {{ rolling }}
-    <i (click)="update()" class="sync alternate icon"></i><br />
-    Restricted to: <span *ngFor="let res of restrictions | keyvalue">{{ res.key }} = {{ res.value }} </span>
-  </p>
-  <span *ngFor="let entry of output">{{ entry }}<br /></span>
+  <div>
+    {{ 'CONSOLE.TEST' | translate }}
+    <div class="ui inline dropdown">
+      <div class="text">{{ rolling }}</div>
+      <i class="dropdown icon"></i>
+      <div class=" menu">
+        <div class="item" *ngFor="let entry of tables" (click)="setTable(entry)">{{ entry }}</div>
+      </div>
+    </div>
+    <i (click)="update()" class="sync alternate icon"></i>
+    <i (click)="clear()" class="delete icon"></i>
+  </div>
+
+  <div class="ui inverted segment" *ngIf="showOptions">
+    <div class="ui inverted mini form">
+      <h4 class="ui inverted dividing header">Select Restrictions:</h4>
+      <div class="three fields">
+        <div *ngFor="let restriction of options | keyvalue" class="inline field">
+          <label>{{ restriction.key | titlecase }}</label>
+          <div class="ui selection dropdown">
+            <input type="hidden" [name]="restriction.key">
+            <div class="text">{{ restrictions[restriction.key] | titlecase }}</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item" *ngFor="let entry of restriction.value" (click)="setRestriction(restriction.key, entry)">{{ entry | titlecase }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <span *ngFor="let entry of output">{{ entry }}<br /></span>
+  </div>
 </div>

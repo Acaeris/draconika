@@ -21,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
 import { WindowTitleComponent } from './components/window-title/window-title.component';
 import { ConsoleComponent } from './components/console/console.component';
 import { TableService } from './providers/table.service';
+import { DropdownDirective } from './directives/dropdown.directive';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -32,6 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     WindowTitleComponent,
     HomeComponent,
     WebviewDirective,
+    DropdownDirective,
     ConsoleComponent
   ],
   imports: [
