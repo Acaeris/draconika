@@ -1,0 +1,24 @@
+{
+  "init": "base",
+  "version": "1.0.2",
+  "name": "Material library",
+  "library": true,
+  "parts": {
+    "base": [{
+      "entries": [
+        { "value": "wood" },
+        { "value": "gold" },
+        { "value": "silver" },
+        { "value": "bronze" },
+        { "value": "copper" },
+        { "value": "steel" },
+        { "value": "iron" },
+        { "value": "mithril" },
+        { "value": "tin" },
+        { "value": "adamantine" },
+        { "value": "an unknown material" },
+        { "value": "brass" }
+      ]
+    }]
+  }
+}

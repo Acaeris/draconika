@@ -18,7 +18,7 @@
     "url": "https://github.com/Acaeris/draconika/issues"
   },
   "scripts": {
-    "postinstall": "npm run postinall:electron && electron-builder install-app-deps",
+    "postinstall": "npm run postinstall:electron && electron-builder install-app-deps",
     "postinstall:web": "node postinstall-web",
     "postinstall:electron": "node postinstall",
     "ng": "ng",
@@ -27,7 +27,7 @@
     "build:dev": "npm run build -- -c dev",
     "build:prod": "npm run build -- -c production",
     "ng:serve": "ng serve",
-    "ng:serve:web": "npm run postinall:web && ng serve -o",
+    "ng:serve:web": "npm run postinstall:web && ng serve -o",
     "electron:serve-tsc": "tsc -p tsconfig-serve.json",
     "electron:serve": "wait-on http-get://localhost:4200/ && npm run electron:serve-tsc && electron . --serve",
     "electron:local": "npm run build:prod && electron .",
@@ -58,7 +58,7 @@
     "@ngx-translate/http-loader": "^4.0.0",
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "^2.0.6",
-    "@types/jquery": "^3.3.29",
+    "@types/jquery": "^3.3.30",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.0.7",
     "chai": "^4.2.0",

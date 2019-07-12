@@ -3,6 +3,7 @@ import { TableService } from '../../providers/table.service';
 import { RollCollection } from '../../models/roll-collection';
 import { Restrictions } from '../../models/restrictions';
 import * as fs from 'fs';
+import { RollService } from '../../providers/roll.service';
 
 @Component({
   selector: 'app-console',
@@ -14,31 +15,19 @@ export class ConsoleComponent implements OnInit {
   restrictions: Restrictions = {};
   collection: RollCollection;
   options: string[][] = [];
-  tables: string[] = [];
+  tables = {};
   showOptions: boolean;
   rolling = 'name';
 
-  constructor(private tableService: TableService) {}
+  constructor(private tableService: TableService, private rollService: RollService) {}
 
   ngOnInit() {
-    this.restrictions = {
-      gender: 'female',
-      race: 'kaldorei'
-    };
-
     this.loadTablenames();
-    this.tableService.get(this.rolling).subscribe(
-      data => this.loadRestrictions(data),
-      error => console.log(error)
-    );
-    this.update();
+    this.loadRestrictions(this.tableService.get(this.rolling));
   }
 
   update() {
-    this.tableService.roll(this.rolling, this.restrictions).subscribe(
-      data => this.output.push(data),
-      error => console.log(error)
-    );
+    this.output.push(this.rollService.roll(this.rolling, 'init', this.restrictions));
   }
 
   clear() {
@@ -46,7 +35,11 @@ export class ConsoleComponent implements OnInit {
   }
 
   setRestriction(key: string, value: string) {
-    this.restrictions[key] = value;
+    if (value !== '') {
+      this.restrictions[key] = value;
+    } else {
+      delete this.restrictions[key];
+    }
   }
 
   loadTablenames() {
@@ -55,7 +48,12 @@ export class ConsoleComponent implements OnInit {
 
       for (const filePath of dir) {
         if (filePath.endsWith('json')) {
-          this.tables.push(filePath.split('.')[0]);
+          const fileName = filePath.split('.')[0];
+          const collection = this.tableService.get(fileName);
+
+          if (typeof collection.library === 'undefined' || !collection.library) {
+            this.tables[fileName] = this.tableService.get(fileName).name;
+          }
         }
       }
     });
@@ -63,10 +61,7 @@ export class ConsoleComponent implements OnInit {
 
   setTable(name: string) {
     this.rolling = name;
-    this.tableService.get(this.rolling).subscribe(
-      data => this.loadRestrictions(data),
-      error => console.log(error)
-    );
+    this.loadRestrictions(this.tableService.get(this.rolling));
   }
 
   loadRestrictions(data: RollCollection) {

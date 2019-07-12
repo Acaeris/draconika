@@ -1,16 +1,27 @@
 {
-  "init": "[format]",
+  "init": "format",
+  "version": "0.15.2",
+  "name": "Heirloom generator",
   "parts": {
     "format": [{
-      "restrictions": {},
       "entries": [
-        { "value": "The heirloom is [heirloom] made of [material] that once belonged to [owner]" },
-        { "value": "The heirloom was once owned by [owner] and is [heirloom] made of [material]" },
-        { "value": "[heirloom], once possesed by [owner], now an heirloom. It is made of [material]." }
+        { "value": "The heirloom is [heirloom] made of [material.base] and is adorned with [adornment] that once belonged to [owner]. [valueFormat]", "chance": 5 },
+        { "value": "The heirloom is [heirloom] made of [material.base] that once belonged to [owner]. [valueFormat]" },
+        { "value": "The heirloom was once owned by [owner] and is [heirloom] made of [material.base], adorned with [adornment]. [valueFormat]", "chance": 5 },
+        { "value": "The heirloom was once owned by [owner] and is [heirloom] made of [material.base]. [valueFormat]" },
+        { "value": "[heirloom], once possesed by [owner], now an heirloom. It is made of [material.base] and adorned with [adornment]. [valueFormat]", "chance": 5 },
+        { "value": "[heirloom], once possesed by [owner], now an heirloom. It is made of [material.base]. [valueFormat]" }
+      ]
+    }],
+    "valueFormat": [{
+      "entries": [
+        { "value": "The heirloom is valued at [heirloomValue]" },
+        { "value": "The heirloom is worth [heirloomValue]" },
+        { "value": "It is valued at [heirloomValue]" },
+        { "value": "It is worth [heirloomValue]" }
       ]
     }],
     "heirloom": [{
-      "restrictions": {},
       "entries": [
         { "value": "[jewellery]" },
         { "value": "a carving of [carving]" },
@@ -23,7 +34,6 @@
       ]
     }],
     "jewellery": [{
-      "restrictions": {},
       "entries": [
         { "value": "a broach" },
         { "value": "a necklace" },
@@ -34,7 +44,6 @@
       ]
     }],
     "carving": [{
-      "restrictions": {},
       "entries": [
         { "value": "a family member" },
         { "value": "an animal" },
@@ -43,7 +52,6 @@
       ]
     }],
     "art": [{
-      "restrictions": {},
       "entries": [
         { "value": "a painting" },
         { "value": "a vase" },
@@ -52,7 +60,6 @@
       ]
     }],
     "furniture": [{
-      "restrictions": {},
       "entries": [
         { "value": "a wardrobe" },
         { "value": "a couch" },
@@ -63,7 +70,6 @@
       ]
     }],
     "musicalInstrument": [{
-      "restrictions": {},
       "entries": [
         { "value": "a piano" },
         { "value": "a lute" },
@@ -72,7 +78,6 @@
       ]
     }],
     "weapon": [{
-      "restrictions": {},
       "entries": [
         { "value": "a sword" },
         { "value": "an axe" },
@@ -85,7 +90,6 @@
       ]
     }],
     "armor": [{
-      "restrictions": {},
       "entries": [
         { "value": "a shield" },
         { "value": "a helmet" },
@@ -94,7 +98,6 @@
       ]
     }],
     "tool": [{
-      "restrictions": {},
       "entries": [
         { "value": "a rake" },
         { "value": "a shovel" },
@@ -107,7 +110,6 @@
       ]
     }],
     "owner": [{
-      "restrictions": {},
       "entries": [
         { "value": "the owner's mother ([name.format])" },
         { "value": "the owner's father ([name.format])" },
@@ -121,21 +123,23 @@
         { "value": "the family's patron" }
       ]
     }],
-    "material": [{
-      "restrictions": {},
+    "adornment": [{
       "entries": [
-        { "value": "wood" },
-        { "value": "gold" },
-        { "value": "silver" },
-        { "value": "bronze" },
-        { "value": "copper" },
-        { "value": "steel" },
-        { "value": "iron" },
-        { "value": "mithril" },
-        { "value": "tin" },
-        { "value": "adamantine" },
-        { "value": "an unknown material" },
-        { "value": "brass" }
+        { "value": "rubies" },
+        { "value": "diamonds" },
+        { "value": "pearls" },
+        { "value": "gold filigree" },
+        { "value": "silver filigree" }
+      ]
+    }],
+    "heirloomValue": [{
+      "entries": [
+        { "value": "nothing beyond sentimental value" },
+        { "value": "nothing, not even to the family" },
+        { "value": "the same value as it's base components" },
+        { "value": "a moderate amount" },
+        { "value": "a particularly good amount" },
+        { "value": "such an amount that it will be talked about in legends"}
       ]
     }]
   }
