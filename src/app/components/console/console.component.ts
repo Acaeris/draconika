@@ -74,8 +74,6 @@ export class ConsoleComponent implements OnInit {
                 options[restriction] = [];
               }
 
-              console.log(tableName);
-
               table.restrictions[restriction].forEach((value: string) => {
                 if (!options[restriction].includes(value)) {
                   options[restriction].push(value);
