@@ -5,5 +5,6 @@ export interface RollCollection {
   init: string;
   name: string;
   library?: boolean;
+  uses?: string[];
   parts: RollParts;
 }

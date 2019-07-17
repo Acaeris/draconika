@@ -1,0 +1,56 @@
+{
+  "init": "profession",
+  "version": "0.0.3",
+  "name": "Professions Library",
+  "library": true,
+  "parts": {
+    "profession": [{
+      "entries": [
+        { "value": "Apprentice" },
+        { "value": "Arcanist" },
+        { "value": "Archdruid" },
+        { "value": "Archivist" },
+        { "value": "Archmage" },
+        { "value": "Archmagister" },
+        { "value": "Brewer" },
+        { "value": "Caretaker" },
+        { "value": "First Mate" },
+        { "value": "Galley Chief" },
+        { "value": "Huntress" },
+        { "value": "Innkeeper" },
+        { "value": "Lieutenant" },
+        { "value": "Lorekeeper" },
+        { "value": "Mariner" },
+        { "value": "Pathfinder" },
+        { "value": "Protector" },
+        { "value": "Ranger General" },
+        { "value": "Second Mate" },
+        { "value": "Skycaller" },
+        { "value": "Squallshaper" },
+        { "value": "Tracker" },
+        { "value": "Valewalker" },
+        { "value": "Warden" },
+        { "value": "Wildwatcher" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": [ "male" ]
+      },
+      "entries": [
+        { "value": "Father" },
+        { "value": "Priest" },
+        { "value": "Prince" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": [ "female" ]
+      },
+      "entries": [
+        { "value": "Mother" },
+        { "value": "Priestess" },
+        { "value": "Princess" },
+        { "value": "Sentinel" }
+      ]
+    }]
+  }
+}

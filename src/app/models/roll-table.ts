@@ -3,5 +3,6 @@ import { Restrictions } from './restrictions';
 
 export interface RollTable {
   restrictions?: Restrictions;
-  entries: Entry[];
+  ref?: string;
+  entries?: Entry[];
 }

@@ -1,0 +1,206 @@
+{
+  "init": "format",
+  "version": "0.0.4",
+  "name": "Human Name Library",
+  "library": true,
+  "parts": {
+    "format":  [{
+      "restrictions": {
+        "race": [ "human" ]
+      },
+      "entries": [
+        { "value": "[title] [firstName] [lastName]-[lastName]" },
+        { "value": "[firstName] [lastName]-[lastName]" },
+        { "value": "[profession] [lastName]-[lastName]" },
+        { "value": "[profession] [lastName]-[lastName] "}
+      ]
+    }],
+    "firstName": [{
+      "restrictions": {
+        "gender": [ "male" ],
+        "race": [ "human" ],
+        "language": [ "english" ]
+      },
+      "entries": [
+        { "value": "Adam" },
+        { "value": "Alan" },
+        { "value": "Connor" },
+        { "value": "Daniel" },
+        { "value": "Douglas" },
+        { "value": "Dwayne" },
+        { "value": "Edward" },
+        { "value": "Elliot" },
+        { "value": "Eston" },
+        { "value": "Gabe" },
+        { "value": "Gabriel" },
+        { "value": "Gordon" },
+        { "value": "Greg" },
+        { "value": "Gregory" },
+        { "value": "Jacob" },
+        { "value": "Jeremy" },
+        { "value": "Joe" },
+        { "value": "John" },
+        { "value": "Joseph" },
+        { "value": "Ken" },
+        { "value": "Kevin" },
+        { "value": "Mark" },
+        { "value": "Martin" },
+        { "value": "Matt" },
+        { "value": "Matthew" },
+        { "value": "Michael" },
+        { "value": "Nathan" },
+        { "value": "Nathaniel" },
+        { "value": "Pete" },
+        { "value": "Peter" },
+        { "value": "Sammy" },
+        { "value": "Samuel" },
+        { "value": "Tim" },
+        { "value": "Timothy" },
+        { "value": "Tom" },
+        { "value": "Warren" },
+        { "value": "Winston" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": [ "male" ],
+        "race": [ "human" ],
+        "language": [ "swedish" ]
+      },
+      "entries": [
+        { "value": "Torbjorn" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": [ "male" ],
+        "race": [ "human" ],
+        "language": [ "spanish" ]
+      },
+      "entries": [
+        { "value": "Alexandre" },
+        { "value": "Alfonso" },
+        { "value": "Alonso" },
+        { "value": "Anthon" },
+        { "value": "Arcos" },
+        { "value": "Arnaut" },
+        { "value": "Arturo" },
+        { "value": "Bartoleme" },
+        { "value": "Benito" },
+        { "value": "Bernat" },
+        { "value": "Blasco" },
+        { "value": "Carlos" },
+        { "value": "Damian" },
+        { "value": "Diego" },
+        { "value": "Domingo" },
+        { "value": "Enrique" },
+        { "value": "Escobar" },
+        { "value": "Ettor" },
+        { "value": "Fernando" },
+        { "value": "Francisco" },
+        { "value": "Gabriel" },
+        { "value": "Garcia" },
+        { "value": "Gaspar" },
+        { "value": "Gil" },
+        { "value": "Gomes" },
+        { "value": "Goncalo" },
+        { "value": "Gostantin" },
+        { "value": "Jayme" },
+        { "value": "Joan" },
+        { "value": "Jorge" },
+        { "value": "Jose" },
+        { "value": "Juan" },
+        { "value": "Machin" },
+        { "value": "Martin" },
+        { "value": "Mateu" },
+        { "value": "Miguel" },
+        { "value": "Nicolas" },
+        { "value": "Pascual" },
+        { "value": "Pedro" },
+        { "value": "Porico" },
+        { "value": "Ramiro" },
+        { "value": "Ramon" },
+        { "value": "Rodrigo" },
+        { "value": "Sabastian" },
+        { "value": "Salvador" },
+        { "value": "Simon" },
+        { "value": "Tomas" },
+        { "value": "Tristan" },
+        { "value": "Valeriano" },
+        { "value": "Ynigo" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": [ "female" ],
+        "race": [ "human" ],
+        "language": [ "english" ]
+      },
+      "entries": [
+        { "value": "Amy" },
+        { "value": "Angela" },
+        { "value": "Anna" },
+        { "value": "Annabelle" },
+        { "value": "Annie" },
+        { "value": "Astrid" },
+        { "value": "Brigitte" },
+        { "value": "Caitlyn" },
+        { "value": "Eleanor" },
+        { "value": "Elly" },
+        { "value": "Elspeth" },
+        { "value": "Hanna" },
+        { "value": "Hannah" },
+        { "value": "Jane" },
+        { "value": "Janet" },
+        { "value": "Jen" },
+        { "value": "Jennifer" },
+        { "value": "Kate" },
+        { "value": "Katie" },
+        { "value": "Lana" },
+        { "value": "Laura" },
+        { "value": "Lily" },
+        { "value": "Lisa" },
+        { "value": "Natalie" },
+        { "value": "Pam" },
+        { "value": "Pamela" },
+        { "value": "Vera" }
+      ]
+    }, {
+      "restrictions": {
+        "race": [ "human" ]
+      },
+      "entries": [
+        { "value": "Sam" },
+        { "value": "Terry" }
+      ]
+    }],
+    "lastName": [{
+      "restrictions": {
+        "race": [ "human" ]
+      },
+      "entries": [
+        { "value": "Addams" },
+        { "value": "Churchill" },
+        { "value": "Cunningham" },
+        { "value": "Edwards" },
+        { "value": "Glasman" },
+        { "value": "Gregory" },
+        { "value": "Hodgins" },
+        { "value": "Hodgkins" },
+        { "value": "Hunt" },
+        { "value": "Jackson" },
+        { "value": "Johnson" },
+        { "value": "Kidman" },
+        { "value": "Lindholm" },
+        { "value": "McCoy" },
+        { "value": "McHugh" },
+        { "value": "Newman" },
+        { "value": "Osborne" },
+        { "value": "Portman" },
+        { "value": "Reyes" },
+        { "value": "Smith" },
+        { "value": "Stewart" },
+        { "value": "Tompkins" },
+        { "value": "Wells" },
+        { "value": "Western" }
+      ]
+    }]
+  }
+}

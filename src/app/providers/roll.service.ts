@@ -50,15 +50,23 @@ export class RollService {
   }
 
   private fetchRolls(data: RollCollection, entryKey: string): string[] {
-    const entries: string[] = [];
+    let entries: string[] = [];
 
     data.parts[entryKey].forEach((rollTable: RollTable) => {
       if (typeof rollTable.restrictions === 'undefined' || this.checkRestrictions(rollTable.restrictions)) {
-        rollTable.entries.forEach((entry: Entry) => {
-          for (let i = 0; i < (entry.chance || 1); i++) {
-            entries.push(entry.value);
-          }
-        });
+        if (rollTable.ref) {
+          const tableRef: string[] = rollTable.ref.split('.');
+          const library: RollCollection = this.tables.get(tableRef[0]);
+          entries = entries.concat(this.fetchRolls(library, tableRef[1]));
+        }
+
+        if (rollTable.entries) {
+          rollTable.entries.forEach((entry: Entry) => {
+            for (let i = 0; i < (entry.chance || 1); i++) {
+              entries.push(entry.value);
+            }
+          });
+        }
       }
     });
 
@@ -69,8 +77,14 @@ export class RollService {
     let isAllowed = true;
 
     Object.keys(restrictions).forEach((key: string) => {
-      if (this.options.hasOwnProperty(key) && restrictions[key] !== this.options[key]) {
+      if (this.options.hasOwnProperty(key) && this.options[key].length > 0) {
         isAllowed = false;
+
+        this.options[key].forEach((option: string) => {
+          if (restrictions[key].indexOf(option) !== -1) {
+            isAllowed = true;
+          }
+        });
       }
     });
 
@@ -78,7 +92,7 @@ export class RollService {
   }
 
   private findParts(output: string): string[] {
-    const regex = /\[([a-zA-Z.]*)\]/g;
+    const regex = /\[([a-zA-Z.-]*)\]/g;
     const parts: string[] = [];
     let m;
 

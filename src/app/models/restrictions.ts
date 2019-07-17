@@ -1,3 +1,3 @@
 export interface Restrictions {
-  [key: string]: string;
+  [key: string]: string[];
 }

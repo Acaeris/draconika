@@ -1,0 +1,150 @@
+{
+  "init": "format",
+  "version": "0.2.1",
+  "name": "D&D Elf Name Library",
+  "library": true,
+  "parts": {
+    "format": [{
+      "restrictions": {
+        "race": [ "elf" ]
+      },
+      "entries": [
+        { "value": "[elf-name.childName] [lastName]"},
+        { "value": "[firstName] [lastName]" }
+      ]
+    }],
+    "firstName": [{
+      "restrictions": {
+        "age": [ "child" ],
+        "race": [ "elf" ]
+      },
+      "entries": [
+
+      ]
+     }, {
+      "restrictions": {
+        "age": [ "adult" ],
+        "gender": [ "female" ],
+        "race": [ "elf" ]
+      },
+      "entries": [
+
+      ]
+    }, {
+      "restrictions": {
+        "age": [ "adult" ],
+        "gender": [ "male" ],
+        "race": [ "elf" ]
+      },
+      "entries": [
+        { "value": "Adran" },
+        { "value": "Aelar" },
+        { "value": "Aerdeth" },
+        { "value": "Ahvain" },
+        { "value": "Aramil" },
+        { "value": "Arannis" },
+        { "value": "Aust" },
+        { "value": "Azaki" },
+        { "value": "Beiro" },
+        { "value": "Berrian" },
+        { "value": "Caeldrim" },
+        { "value": "Carric" },
+        { "value": "Dayereth" },
+        { "value": "Dreali" },
+        { "value": "Efferil" },
+        { "value": "Eiravel" },
+        { "value": "Enialis" },
+        { "value": "Erdan" },
+        { "value": "Erevan" },
+        { "value": "Fivin" },
+        { "value": "Galinndan" },
+        { "value": "Gennal" },
+        { "value": "Hadarai" },
+        { "value": "Halimath" },
+        { "value": "Heian" },
+        { "value": "Himo" },
+        { "value": "Immeral" },
+        { "value": "Ivellios" },
+        { "value": "Korfel" },
+        { "value": "Lamlis" },
+        { "value": "Laucian" },
+        { "value": "Lucan" },
+        { "value": "Mindartis" },
+        { "value": "Naal" },
+        { "value": "Nutae" },
+        { "value": "Paelias" },
+        { "value": "Peren" },
+        { "value": "Quarion" },
+        { "value": "Riardon" },
+        { "value": "Rolen" },
+        { "value": "Soveliss" },
+        { "value": "Suhnae" },
+        { "value": "Thamior" },
+        { "value": "Tharivol" },
+        { "value": "Theren" },
+        { "value": "Theriatis" },
+        { "value": "Thervan" },
+        { "value": "Uthemar" },
+        { "value": "Vanuath" },
+        { "value": "Varis" }
+      ]
+    }],
+    "lastName": [{
+      "restrictions": {
+        "race": [ "elf" ]
+      },
+      "entries": [
+        { "value": "Aloro" },
+        { "value": "Amakiir" },
+        { "value": "Amastacia" },
+        { "value": "Ariessus" },
+        { "value": "Arnuanna" },
+        { "value": "Berevan" },
+        { "value": "Caerdonel" },
+        { "value": "Caphaxath" },
+        { "value": "Casilltenirra" },
+        { "value": "Cithreth" },
+        { "value": "Dalanthan" },
+        { "value": "Eathalena" },
+        { "value": "Erenaeth" },
+        { "value": "Ethanasath" },
+        { "value": "Fasharash" },
+        { "value": "Firahel" },
+        { "value": "Floshem" },
+        { "value": "Galanodel" },
+        { "value": "Goltorah" },
+        { "value": "Hanali" },
+        { "value": "Holimion" },
+        { "value": "Horineth" },
+        { "value": "Iathrana" },
+        { "value": "Ilphelkiir" },
+        { "value": "Iranapha" },
+        { "value": "Koehlanna" },
+        { "value": "Lathalas" },
+        { "value": "Liadon" },
+        { "value": "Meliamne" },
+        { "value": "Mellerelel" },
+        { "value": "Mystralah" },
+        { "value": "Nailo" },
+        { "value": "Netyoive" },
+        { "value": "Ofandrus" },
+        { "value": "Ostoroth" },
+        { "value": "Othronus" },
+        { "value": "Qualanthri" },
+        { "value": "Raethran" },
+        { "value": "Rothenel" },
+        { "value": "Selevarun" },
+        { "value": "Siannodel" },
+        { "value": "Suitrasas" },
+        { "value": "Sylvaranth" },
+        { "value": "Teinithra" },
+        { "value": "Tiltahana" },
+        { "value": "Wasanthi" },
+        { "value": "Withrethin" },
+        { "value": "Xiloscient" },
+        { "value": "Xistsrith" },
+        { "value": "Yaeldrin" }
+      ]
+    }]
+  }
+}

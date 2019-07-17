@@ -23,7 +23,7 @@ export class ConsoleComponent implements OnInit {
 
   ngOnInit() {
     this.loadTablenames();
-    this.loadRestrictions(this.tableService.get(this.rolling));
+    this.updateRestrictions(this.rolling);
   }
 
   update() {
@@ -32,14 +32,6 @@ export class ConsoleComponent implements OnInit {
 
   clear() {
     this.output = [];
-  }
-
-  setRestriction(key: string, value: string) {
-    if (value !== '') {
-      this.restrictions[key] = value;
-    } else {
-      delete this.restrictions[key];
-    }
   }
 
   loadTablenames() {
@@ -61,29 +53,58 @@ export class ConsoleComponent implements OnInit {
 
   setTable(name: string) {
     this.rolling = name;
-    this.loadRestrictions(this.tableService.get(this.rolling));
+    this.updateRestrictions(this.rolling);
   }
 
-  loadRestrictions(data: RollCollection) {
-    this.options = [];
+  updateRestrictions(tableName: string) {
+    this.options = this.loadRestrictions(tableName);
+    this.showOptions = Object.keys(this.options).length > 0;
+  }
+
+  loadRestrictions(tableName: string): any {
+    const data: RollCollection = this.tableService.get(tableName);
+    const options = [];
+
     for (const part in data.parts) {
       if (data.parts.hasOwnProperty(part)) {
         for (const table of data.parts[part]) {
           for (const restriction in table.restrictions) {
             if (table.restrictions.hasOwnProperty(restriction)) {
-              if (!(restriction in this.options)) {
-                this.options[restriction] = [];
+              if (!(restriction in options)) {
+                options[restriction] = [];
               }
 
-              if (!this.options[restriction].includes(table.restrictions[restriction])) {
-                this.options[restriction].push(table.restrictions[restriction]);
-              }
+              console.log(tableName);
+
+              table.restrictions[restriction].forEach((value: string) => {
+                if (!options[restriction].includes(value)) {
+                  options[restriction].push(value);
+                }
+              });
             }
           }
         }
       }
     }
 
-    this.showOptions = Object.keys(this.options).length > 0;
+    if (data.uses && data.uses.length > 0) {
+      for (const library of data.uses) {
+        const subOptions = this.loadRestrictions(library);
+
+        for (const restriction in subOptions) {
+          if (subOptions.hasOwnProperty(restriction) && options.hasOwnProperty(restriction)) {
+            for (const entry of subOptions[restriction]) {
+              if (!options[restriction].includes(entry)) {
+                options[restriction].push(entry);
+              }
+            }
+          } else if (subOptions.hasOwnProperty(restriction)) {
+            options[restriction] = subOptions[restriction];
+          }
+        }
+      }
+    }
+
+    return options;
   }
 }
