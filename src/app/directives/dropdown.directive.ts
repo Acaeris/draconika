@@ -4,5 +4,5 @@ import { Directive, ElementRef, OnInit } from '@angular/core';
 export class DropdownDirective implements OnInit {
   constructor(private el: ElementRef) { }
 
-  ngOnInit() { $(this.el.nativeElement).dropdown(); }
+  ngOnInit() { jQuery(this.el.nativeElement).dropdown(); }
 }

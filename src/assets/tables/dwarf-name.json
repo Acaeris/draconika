@@ -1,0 +1,138 @@
+{
+  "init": "format",
+  "version": "0.2.0",
+  "name": "D&D Dwarf Name Library",
+  "library": true,
+  "parts": {
+    "format": [{
+      "restrictions": {
+        "race": [ "dwarf" ]
+      },
+      "entries": [
+        { "value": "[firstName] of Clan [lastName]", "chance": 20 }
+      ]
+    }],
+    "firstName": [{
+      "restrictions": {
+        "gender": [ "female" ],
+        "race": [ "dwarf" ]
+      },
+      "entries": [
+        { "value": "Anbera" },
+        { "value": "Artin" },
+        { "value": "Audhild" },
+        { "value": "Balifra" },
+        { "value": "Barbena" },
+        { "value": "Bardryn" },
+        { "value": "Bolhild" },
+        { "value": "Dagnal" },
+        { "value": "Dariff" },
+        { "value": "Delre" },
+        { "value": "Diesa" },
+        { "value": "Eldeth" },
+        { "value": "Eridred" },
+        { "value": "Falkrunn" },
+        { "value": "Fallthra" },
+        { "value": "Finellen" },
+        { "value": "Gillydd" },
+        { "value": "Gunnloda" },
+        { "value": "Gurdis" },
+        { "value": "Helgret" },
+        { "value": "Helja" },
+        { "value": "Hlin" },
+        { "value": "Ilde" },
+        { "value": "Jarana" },
+        { "value": "Kathra" },
+        { "value": "Kilia" },
+        { "value": "Kristryd" },
+        { "value": "Liftrasa" },
+        { "value": "Marastyr" },
+        { "value": "Mardred" },
+        { "value": "Morana" },
+        { "value": "Nalaed" },
+        { "value": "Nora" },
+        { "value": "Nurkara" },
+        { "value": "Oriff" },
+        { "value": "Ovina" },
+        { "value": "Riswynn" },
+        { "value": "Sannl" },
+        { "value": "Therlin" },
+        { "value": "Thodris" },
+        { "value": "Torbera" },
+        { "value": "Tordrid" },
+        { "value": "Torgga" },
+        { "value": "Urshar" },
+        { "value": "Valida" },
+        { "value": "Vistra" },
+        { "value": "Vonana" },
+        { "value": "Werydd" },
+        { "value": "Whurdred" },
+        { "value": "Yurgunn" }
+      ]
+    }, {
+      "restrictions": {
+        "gender": [ "male" ],
+        "race": [ "dwarf" ]
+      },
+      "entries": [
+        { "value": "Adrik" },
+        { "value": "Alberich" },
+        { "value": "Baern" },
+        { "value": "Barendd" },
+        { "value": "Beloril" },
+        { "value": "Brottor" },
+        { "value": "Dain" },
+        { "value": "Dalgal" },
+        { "value": "Darrak" },
+        { "value": "Delg" },
+        { "value": "Duergath" },
+        { "value": "Dworic" },
+        { "value": "Eberk" },
+        { "value": "Einkil" },
+        { "value": "Elaim" },
+        { "value": "Erias" },
+        { "value": "Fallond" },
+        { "value": "Fargrim" },
+        { "value": "Gardain" },
+        { "value": "Gilthur" },
+        { "value": "Gimgen" },
+        { "value": "Gimurt" },
+        { "value": "Harbek" },
+        { "value": "Kildrak" },
+        { "value": "Kilvar" },
+        { "value": "Morgran" },
+        { "value": "Morkral" },
+        { "value": "Nalral" },
+        { "value": "Nordak" },
+        { "value": "Nuraval" },
+        { "value": "Oloric" },
+        { "value": "Olunt" },
+        { "value": "Orsik" },
+        { "value": "Oskar" },
+        { "value": "Rangrim" },
+        { "value": "Reirak" },
+        { "value": "Rurik" },
+        { "value": "Taklinn" },
+        { "value": "Thoradin" },
+        { "value": "Thorin" },
+        { "value": "Thradal" },
+        { "value": "Tordek" },
+        { "value": "Traubon" },
+        { "value": "Travok" },
+        { "value": "Ulfgar" },
+        { "value": "Uraim" },
+        { "value": "Veit" },
+        { "value": "Vonbin" },
+        { "value": "Vondal" },
+        { "value": "Whurbin" }
+      ]
+    }],
+    "lastName": [{
+      "restrictions": {
+        "race": [ "dwarf" ]
+      },
+      "entries": [
+      ]
+    }]
+  }
+}

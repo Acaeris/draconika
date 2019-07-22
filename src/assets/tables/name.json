@@ -1,8 +1,8 @@
 {
   "init": "format",
-  "version": "0.0.25",
+  "version": "0.1.2",
   "name": "NPC name generator",
-  "uses": ["dragonborn-name", "elf-name", "gnome-name", "human-name", "kaldorei-name", "professions"],
+  "uses": ["dragonborn-name", "dwarf-name", "elf-name", "gnome-name", "human-name", "kaldorei-name", "professions"],
   "parts": {
     "format": [{
       "entries": [
@@ -15,6 +15,8 @@
       ]
     }, {
       "ref": "dragonborn-name.format"
+    }, {
+      "ref": "dwarf-name.format"
     }, {
       "ref": "human-name.format"
     }],
@@ -56,11 +58,15 @@
     "firstName": [{
       "ref": "dragonborn-name.firstName"
     }, {
+      "ref": "dwarf-name.firstName"
+    }, {
+      "ref": "elf-name.firstName"
+    }, {
+      "ref": "gnome-name.firstName"
+    }, {
       "ref": "human-name.firstName"
     }, {
       "ref": "kaldorei-name.firstName"
-    }, {
-      "ref": "gnome-name.firstName"
     }],
     "lastName": [{
       "ref": "human-name.lastName"
@@ -70,6 +76,8 @@
       "ref": "dragonborn-name.lastName"
     }, {
       "ref": "gnome-name.lastName"
+    }, {
+      "ref": "elf-name.lastName"
     }],
     "suffix": [{
       "entries": [

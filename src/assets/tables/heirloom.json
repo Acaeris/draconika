@@ -2,7 +2,7 @@
   "init": "format",
   "version": "0.15.2",
   "name": "Heirloom generator",
-  "uses": [ "name" ],
+  "uses": [ ],
   "parts": {
     "format": [{
       "entries": [

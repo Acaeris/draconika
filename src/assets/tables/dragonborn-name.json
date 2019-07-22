@@ -1,6 +1,6 @@
 {
   "init": "format",
-  "version": "0.2.4",
+  "version": "1.0.0",
   "name": "Dragonborn Name Library",
   "library": true,
   "parts": {
@@ -167,7 +167,21 @@
         { "value": "Pfaphnyrennish" },
         { "value": "Phrahdrandon" },
         { "value": "Pyraxtallinost" },
-        { "value": "Qyxpahrgh" }
+        { "value": "Qyxpahrgh" },
+        { "value": "Raghthrknaar" },
+        { "value": "Shestendeliath" },
+        { "value": "Skaarzborroosh" },
+        { "value": "Sumnarghthrysh" },
+        { "value": "Tiammanthyllish" },
+        { "value": "Turnuroth" },
+        { "value": "Umbyrphrael" },
+        { "value": "Vangdondalor" },
+        { "value": "Verthisathurgiesh" },
+        { "value": "Wivvyrholdalphiax" },
+        { "value": "Wystongjiir" },
+        { "value": "Xephyrbahnor" },
+        { "value": "Yarjerit" },
+        { "value": "Zzzxaaxthroth" }
       ]
     }]
   }

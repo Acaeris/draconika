@@ -25,10 +25,12 @@
               "src/favicon.512x512.png"
             ],
             "styles": [
+              "src/assets/semantic/semantic.min.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/semantic/semantic.min.js"
             ]
           },
           "configurations": {
