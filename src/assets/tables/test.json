@@ -1,0 +1,17 @@
+{
+  "init": "test",
+  "version": "0.0.1",
+  "name": "Feature tests",
+  "parts": {
+    "test": [{
+      "restrictions": {
+        "test": [ "dice" ]
+      },
+      "entries": [
+        { "value": "[#1d6] 1d6" },
+        { "value": "[#2d6] 2d6" },
+        { "value": "[#1d20] 1d20" }
+      ]
+    }]
+  }
+}

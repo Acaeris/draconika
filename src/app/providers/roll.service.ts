@@ -29,6 +29,7 @@ export class RollService {
     const mergeTable: string[] = this.fetchRolls(data, entryKey);
     let output = this.subRoll(mergeTable);
 
+    output = this.replaceDice(output);
     const parts = this.findParts(output);
 
     if (parts.length > 0) {
@@ -105,5 +106,32 @@ export class RollService {
     } while (m);
 
     return parts;
+  }
+
+  private replaceDice(output: string): string {
+    const regex = /\[#(\d+)d(\d+)\]/g;
+    let m;
+
+    do {
+      m = regex.exec(output);
+
+      if (m) {
+        const amount = Number(m[1]);
+        const sides = Number(m[2]);
+        output = output.replace(m[0], this.rollDie(amount, sides).toString());
+      }
+    } while (m);
+
+    return output;
+  }
+
+  private rollDie(amount: number, sides: number): number {
+    let value = 0;
+
+    for (let i = 0; i < amount; i++) {
+      value += Math.floor(Math.random() * sides) + 1;
+    }
+
+    return value;
   }
 }

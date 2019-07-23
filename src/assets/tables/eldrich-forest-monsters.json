@@ -1,0 +1,35 @@
+{
+  "init": "monsters",
+  "version": "0.0.1",
+  "name": "Eldrich Forest Encounter Generator",
+  "parts": {
+    "monsters": [{
+      "entries": [
+        { "value": "1 psuedodragon", "chance": 5 },
+        { "value": "1 werewolf", "chance": 4 },
+        { "value": "1 yellow musk creeper", "chance": 3 },
+        { "value": "1 assassin vine", "chance": 5 },
+        { "value": "1 ettercap", "chance": 4 },
+        { "value": "1 giant mantis", "chance": 3 },
+        { "value": "1 owlbear", "chance": 7 },
+        { "value": "1 hydra", "chance": 3 },
+        { "value": "[#1d4] worgs", "chance": 5 },
+        { "value": "1 basilisk", "chance": 6 },
+        { "value": "[#1d4] dryads", "chance": 6 },
+        { "value": "[#1d4] unicorns", "chance": 5 },
+        { "value": "[#1d6] centaurs", "chance": 3 },
+        { "value": "1 girallon", "chance": 2 },
+        { "value": "[#1d4] half celestial unicorns", "chance": 6 },
+        { "value": "[#1d4] satyrs", "chance": 3 },
+        { "value": "1 shambling mound", "chance": 3 },
+        { "value": "1 dire bear", "chance": 2 },
+        { "value": "1 nymph", "chance": 6 },
+        { "value": "[#2d4] pegasi", "chance": 4 },
+        { "value": "[#1d6] pixies", "chance": 5 },
+        { "value": "1 treant", "chance": 5 },
+        { "value": "1 gorgon", "chance": 4 },
+        { "value": "1 couatl", "chance": 2 }
+      ]
+    }]
+  }
+}

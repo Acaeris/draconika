@@ -1,6 +1,6 @@
 {
   "init": "format",
-  "version": "0.1.2",
+  "version": "0.4.2",
   "name": "NPC name generator",
   "uses": ["dragonborn-name", "dwarf-name", "elf-name", "gnome-name", "human-name", "kaldorei-name", "professions"],
   "parts": {
@@ -96,17 +96,22 @@
         { "value": " of the Scythe" },
         { "value": " of the Shifting Sands" },
         { "value": " of the Talon" },
+        { "value": " the Cunning" },
         { "value": " the Drowsy" },
         { "value": " the Ever-living" },
         { "value": " the Gatekeeper" },
         { "value": " the Hooded" },
         { "value": " the Jaded" },
+        { "value": " the Malevolent" },
+        { "value": " the Moon Baron" },
         { "value": " the Patient" },
+        { "value": " the Quick" },
         { "value": " the Reaper" },
         { "value": " the Silent" },
         { "value": " the Sleeper" },
         { "value": " the Sufferer" },
-        { "value": " the Vile" }
+        { "value": " the Vile" },
+        { "value": " the Wanderer" }
       ]
     }]
   }

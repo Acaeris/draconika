@@ -28,7 +28,7 @@
     </div>
 
     <div class="twelve wide column">
-      <span *ngFor="let entry of output">{{ entry }}<br /></span>
+      <div *ngFor="let entry of output" [innerHTML]="entry"></div>
     </div>
   </div>
 </div>

@@ -1,0 +1,33 @@
+{
+  "init": "weather",
+  "version": "0.0.1",
+  "name": "Weather generator",
+  "parts": {
+    "weather": [{
+      "entries": [
+        { "value": "Temperature: [temperature] - Wind: [wind] - Precipitation: [precipitation]" }
+      ]
+    }],
+    "temperature": [{
+      "entries": [
+        { "value": "Normal for the season", "chance": 14 },
+        { "value": "[#1d40] &deg;F colder than normal", "chance": 3 },
+        { "value": "[#1d40] &deg;F hotter than normal", "chance": 3 }
+      ]
+    }],
+    "wind": [{
+      "entries": [
+        { "value": "None", "chance": 12 },
+        { "value": "Light", "chance": 5 },
+        { "value": "Strong", "chance": 3 }
+      ]
+    }],
+    "precipitation": [{
+      "entries": [
+        { "value": "None", "chance": 12 },
+        { "value": "Light rain or light snowfall", "chance": 5 },
+        { "value": "Heavy rain or heavy snowfall", "chance": 3 }
+      ]
+    }]
+  }
+}

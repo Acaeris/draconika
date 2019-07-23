@@ -1,6 +1,6 @@
 {
   "init": "profession",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "name": "Professions Library",
   "library": true,
   "parts": {
@@ -14,6 +14,7 @@
         { "value": "Archmagister" },
         { "value": "Brewer" },
         { "value": "Caretaker" },
+        { "value": "Dreamwarden" },
         { "value": "First Mate" },
         { "value": "Galley Chief" },
         { "value": "Huntress" },
@@ -21,15 +22,18 @@
         { "value": "Lieutenant" },
         { "value": "Lorekeeper" },
         { "value": "Mariner" },
+        { "value": "Master Shapeshifter" },
         { "value": "Pathfinder" },
         { "value": "Protector" },
         { "value": "Ranger General" },
+        { "value": "Saber-Rider" },
         { "value": "Second Mate" },
         { "value": "Skycaller" },
         { "value": "Squallshaper" },
         { "value": "Tracker" },
         { "value": "Valewalker" },
         { "value": "Warden" },
+        { "value": "Weaver" },
         { "value": "Wildwatcher" }
       ]
     }, {
