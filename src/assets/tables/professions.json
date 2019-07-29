@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema/draconika-roll-file.json",
   "init": "profession",
   "version": "0.0.5",
   "name": "Professions Library",

@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema/draconika-roll-file.json",
   "init": "weather",
   "version": "0.0.1",
   "name": "Weather generator",
