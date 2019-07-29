@@ -1,0 +1,67 @@
+{
+  "$schema": "../schema/draconika-roll-file.json",
+  "init": "race",
+  "name": "Race Generator",
+  "version": "0.0.1",
+  "parts": {
+    "race": [{
+      "restrictions": {
+        "setting": [ "azeroth" ],
+        "faction": [ "alliance" ],
+        "types": [ "factioned" ]
+      },
+      "entries": [
+        { "value": "Stormwind Human" },
+        { "value": "Kul'tiran Human" },
+        { "value": "Gilnean Human" },
+        { "value": "High Elf" },
+        { "value": "Night Elf" },
+        { "value": "Void Elf" },
+        { "value": "Exodar Draenei" },
+        { "value": "Lightforged Draenei" },
+        { "value": "Gnome" },
+        { "value": "Ironforge Dwarf" },
+        { "value": "Dark Iron Dwarf" },
+        { "value": "Wildhammer Dwarf" }
+      ]
+    }, {
+      "restrictions": {
+        "setting": [ "azeroth" ],
+        "faction": [ "horde" ],
+        "types": [ "factioned" ]
+      },
+      "entries": [
+        { "value": "Blood Elf" },
+        { "value": "Nightborne" },
+        { "value": "Forsaken" },
+        { "value": "Thunderbluff Taruen" },
+        { "value": "Highmountain Tauren" },
+        { "value": "Orc" },
+        { "value": "Mag'har Orc" },
+        { "value": "Darkspear Troll" },
+        { "value": "Zandalari Troll" },
+        { "value": "Goblin" }
+      ]
+    }, {
+      "restrictions": {
+        "setting": [ "azeroth" ],
+        "faction": [ "horde", "alliance" ],
+        "types": [ "factioned" ]
+      },
+      "entries": [
+        { "value": "Pandaren" }
+      ]
+    }, {
+      "restrictions": {
+        "setting": [ "azeroth" ],
+        "types": [ "wild" ]
+      },
+      "entries": [
+        { "value": "Mechagnome" },
+        { "value": "Amani Troll" },
+        { "value": "Gurubashi Troll" },
+        { "value": "Naga" }
+      ]
+    }]
+  }
+}
