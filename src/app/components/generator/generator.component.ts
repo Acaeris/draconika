@@ -6,11 +6,11 @@ import * as fs from 'fs';
 import { RollService } from '../../providers/roll.service';
 
 @Component({
-  selector: 'app-console',
-  templateUrl: './console.component.html',
-  styleUrls: ['./console.component.scss']
+  selector: 'app-generator',
+  templateUrl: './generator.component.html',
+  styleUrls: ['./generator.component.scss']
 })
-export class ConsoleComponent implements OnInit {
+export class GeneratorComponent implements OnInit {
   output: string[] = [];
   restrictions: Restrictions = {};
   collection: RollCollection;

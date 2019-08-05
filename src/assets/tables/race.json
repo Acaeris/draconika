@@ -2,13 +2,13 @@
   "$schema": "../schema/draconika-roll-file.json",
   "init": "race",
   "name": "Race Generator",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "parts": {
     "race": [{
       "restrictions": {
         "setting": [ "azeroth" ],
         "faction": [ "alliance" ],
-        "types": [ "factioned" ]
+        "types": [ "humanoid" ]
       },
       "entries": [
         { "value": "Stormwind Human" },
@@ -28,7 +28,7 @@
       "restrictions": {
         "setting": [ "azeroth" ],
         "faction": [ "horde" ],
-        "types": [ "factioned" ]
+        "types": [ "humanoid" ]
       },
       "entries": [
         { "value": "Blood Elf" },
@@ -46,7 +46,7 @@
       "restrictions": {
         "setting": [ "azeroth" ],
         "faction": [ "horde", "alliance" ],
-        "types": [ "factioned" ]
+        "types": [ "humanoid" ]
       },
       "entries": [
         { "value": "Pandaren" }
@@ -60,7 +60,23 @@
         { "value": "Mechagnome" },
         { "value": "Amani Troll" },
         { "value": "Gurubashi Troll" },
-        { "value": "Naga" }
+        { "value": "Naga" },
+        { "value": "Vulpera" },
+        { "value": "Furbolg" },
+        { "value": "Owlkin" },
+        { "value": "Ogre" }
+      ]
+    }, {
+      "restrictions": {
+        "setting": [ "azeroth" ],
+        "types": [ "corrupted" ],
+        "faction": [ "legion" ]
+      },
+      "entries": [
+        { "value": "Sayaadi" },
+        { "value": "Nathrezim" },
+        { "value": "Shivarra" },
+        { "value": "Eredar" }
       ]
     }]
   }

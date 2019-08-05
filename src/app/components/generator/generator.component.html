@@ -1,6 +1,6 @@
-<div class="ui console">
+<div class="ui generator">
   <div class="ui inverted segment">
-    {{ 'CONSOLE.TEST' | translate }}
+    {{ 'PAGES.GENERATOR.SELECT' | translate }}
     <div class="ui inline dropdown">
       <div class="text">{{ tableService.get(rolling).name }}</div>
       <i class="dropdown icon"></i>
@@ -17,7 +17,7 @@
       <div class="ui inverted segment">
         <div class="ui inverted mini form">
           <h4 class="ui inverted dividing header">Select Restrictions:</h4>
-          <div *ngFor="let restriction of options | keyvalue" class="inline field">
+          <div *ngFor="let restriction of options | keyvalue" class="field">
             <label>{{ restriction.key | titlecase }}</label>
             <select [name]="restriction.key" [(ngModel)]="restrictions[restriction.key]" class="ui dropdown" multiple="">
               <option *ngFor="let entry of restriction.value" value="{{ entry }}">{{ entry | titlecase }}</option>

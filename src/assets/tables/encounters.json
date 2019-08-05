@@ -1,11 +1,11 @@
 {
   "init": "encounters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Encounters generator",
   "parts": {
     "encounters": [{
       "restrictions": {
-        "location": "city"
+        "location": [ "city" ]
       },
       "entries": [
         { "value": "A fire rages across the city, destroying major portions of it." },

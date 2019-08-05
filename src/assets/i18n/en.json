@@ -1,13 +1,10 @@
 {
   "PAGES": {
-    "HOME": {
-      "TITLE": "App works !"
+    "GENERATOR": {
+      "SELECT": "Select a generator: "
     }
   },
   "WINDOW": {
     "TITLE": "Draconika"
-  },
-  "CONSOLE": {
-    "TEST": "> Rolling on "
   }
 }

@@ -1,9 +1,7 @@
 import 'reflect-metadata';
 import '../polyfills';
 
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
@@ -16,13 +14,13 @@ import { ElectronService } from './providers/electron.service';
 
 import { WebviewDirective } from './directives/webview.directive';
 
+import { GeneratorModule } from './components/generator/generator.module';
+import { HomeModule } from './components/home/home.module';
+
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
 import { WindowTitleComponent } from './components/window-title/window-title.component';
-import { ConsoleComponent } from './components/console/console.component';
-import { DropdownDirective } from './directives/dropdown.directive';
-import { TableService } from './providers/table.service';
-import { RollService } from './providers/roll.service';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { SharedModule } from './components/shared/shared.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -32,33 +30,24 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     WindowTitleComponent,
-    HomeComponent,
-    WebviewDirective,
-    DropdownDirective,
-    ConsoleComponent
+    NavigationComponent,
+    WebviewDirective
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
+    SharedModule.forRoot(),
     HttpClientModule,
     AppRoutingModule,
+    HomeModule,
+    GeneratorModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: (HttpLoaderFactory),
-        deps: [
-          HttpClient
-        ]
+        deps: [ HttpClient ]
       }
     })
   ],
-  providers: [
-    ElectronService,
-    TableService,
-    RollService
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+  providers: [ ElectronService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {}
