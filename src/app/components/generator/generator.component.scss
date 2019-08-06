@@ -1,4 +1,13 @@
-.ui.generator {
-  color: #fff;
-  padding: 3px 5px;
+:host {
+  flex: auto;
+}
+
+.ui {
+  &.generator {
+    color: #fff;
+  }
+
+  &.segment {
+    border-radius: 0;
+  }
 }

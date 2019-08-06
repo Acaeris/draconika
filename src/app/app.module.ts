@@ -21,6 +21,7 @@ import { AppComponent } from './app.component';
 import { WindowTitleComponent } from './components/window-title/window-title.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { SharedModule } from './components/shared/shared.module';
+import { NotepadComponent } from './components/notepad/notepad.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -31,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     WindowTitleComponent,
     NavigationComponent,
+    NotepadComponent,
     WebviewDirective
   ],
   imports: [

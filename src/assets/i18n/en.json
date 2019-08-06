@@ -6,5 +6,8 @@
   },
   "WINDOW": {
     "TITLE": "Draconika"
+  },
+  "NAVIGATION": {
+    "HOME": "Home"
   }
 }

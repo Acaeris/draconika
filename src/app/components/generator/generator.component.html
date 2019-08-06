@@ -8,8 +8,6 @@
         <div class="item" *ngFor="let entry of tables | keyvalue" (click)="setTable(entry.key)">{{ entry.value }}</div>
       </div>
     </div>
-    <i (click)="update()" class="inverted green sync alternate icon"></i>
-    <i (click)="clear()" class="inverted red delete icon"></i>
   </div>
 
   <div class="ui grid">
@@ -28,6 +26,10 @@
     </div>
 
     <div class="twelve wide column">
+      <div class="ui small black icon buttons">
+        <button class="ui black button"><i (click)="update()" class="inverted green sync alternate icon"></i></button>
+        <button class="ui black button"><i (click)="clear()" class="inverted red delete icon"></i></button>
+      </div>
       <div *ngFor="let entry of output" [innerHTML]="entry"></div>
     </div>
   </div>

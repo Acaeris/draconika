@@ -1,5 +1,18 @@
-.ui.app.window {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.ui {
+  &.app.window {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &.split.view {
+    &.horizontal {
+      display: flex;
+      height: 100%;
+
+      router-outlet {
+        flex: none;
+      }
+    }
+  }
 }
