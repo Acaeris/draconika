@@ -5,6 +5,25 @@
 .ui {
   &.generator {
     color: #fff;
+
+    .content {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      .restrictions {
+        width: 230px;
+      }
+
+      .results {
+        flex: auto;
+        padding: 0 0.5em;
+      }
+    }
+  }
+
+  &.grid {
+    margin: 0 3px;
   }
 
   &.segment {

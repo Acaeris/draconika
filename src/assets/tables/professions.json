@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/draconika-roll-file.json",
   "init": "profession",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "name": "Professions Library",
   "library": true,
   "parts": {
@@ -19,8 +19,10 @@
         { "value": "Dreamwarden" },
         { "value": "First Mate" },
         { "value": "Galley Chief" },
+        { "value": "Herald" },
         { "value": "Huntress" },
         { "value": "Innkeeper" },
+        { "value": "Knight-Lieutenant" },
         { "value": "Lieutenant" },
         { "value": "Lorekeeper" },
         { "value": "Mariner" },

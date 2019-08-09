@@ -26,7 +26,7 @@ export class GeneratorComponent implements OnInit {
     this.updateRestrictions(this.rolling);
   }
 
-  update() {
+  generate() {
     this.output.push(this.rollService.roll(this.rolling, 'init', this.restrictions));
   }
 
