@@ -8,6 +8,9 @@
     "TITLE": "Draconika"
   },
   "NAVIGATION": {
-    "HOME": "Home"
+    "HOME": "Campaign"
+  },
+  "NOTEPAD": {
+    "DEFAULT": "<p>You can add your own notes here!</p>"
   }
 }

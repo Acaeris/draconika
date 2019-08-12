@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as BalloonEditor from '@ckeditor/ckeditor5-build-balloon';
 
 @Component({
   selector: 'app-notepad',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./notepad.component.scss']
 })
 export class NotepadComponent {
-
+  public Editor = BalloonEditor;
 }

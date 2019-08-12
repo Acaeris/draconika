@@ -40,6 +40,8 @@
     "version": "convertional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-angular": "^1.1.0",
+    "@ckeditor/ckeditor5-build-balloon": "^12.3.1",
     "jquery": "^3.4.1",
     "tslib": "^1.10.0"
   },

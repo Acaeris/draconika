@@ -2,7 +2,7 @@
   "$schema": "../schema/draconika-roll-file.json",
   "init": "race",
   "name": "Race Generator",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "parts": {
     "race": [{
       "restrictions": {
@@ -77,6 +77,52 @@
         { "value": "Nathrezim" },
         { "value": "Shivarra" },
         { "value": "Eredar" }
+      ]
+    }, {
+      "restrictions": {
+        "setting": [ "forgotten realms"],
+        "types": [ "humanoid" ]
+      },
+      "entries": [
+        { "value": "Human", "chance": 10 },
+        { "value": "High Elf", "chance": 5 },
+        { "value": "Wood Elf", "chance": 5 },
+        { "value": "Eladrin Elf" },
+        { "value": "Hill Dwarf" , "chance": 4 },
+        { "value": "Mountain Dwarf", "chance": 5 },
+        { "value": "Stout Halfling", "chance": 5 },
+        { "value": "Lightfoot Halfling", "chance": 5 },
+        { "value": "Ghostwise Halfling" },
+        { "value": "Forest Gnome", "chance": 2 },
+        { "value": "Rock Gnome", "chance": 2 },
+        { "value": "Deep Gnome" },
+        { "value": "Half-orc", "chance": 3 },
+        { "value": "Half-elf", "chance": 4 },
+        { "value": "Dragonborn", "chance": 4 },
+        { "value": "Infernal Tiefling", "chance": 2 },
+        { "value": "Feral Tiefling", "chance": 2 },
+        { "value": "Protector Aasimar", "chance": 2 },
+        { "value": "Scourge Aasimar" },
+        { "value": "Fallen Aasimar" },
+        { "value": "Aarakocra", "chance": 3 },
+        { "value": "Goliath", "chance": 4 },
+        { "value": "Air Genasi" },
+        { "value": "Earth Genasi" },
+        { "value": "Fire Genasi" },
+        { "value": "Water Genasi" },
+        { "value": "Tabaxi", "chance": 3 },
+        { "value": "Firbolg", "chance": 3 },
+        { "value": "Triton", "chance": 3 },
+        { "value": "Kenku", "chance": 3 },
+        { "value": "Lizardfolk", "chance": 4 },
+        { "value": "Duergar Dwarf" },
+        { "value": "Drow" },
+        { "value": "Kobold" },
+        { "value": "Orc" },
+        { "value": "Hobgoblin" },
+        { "value": "Goblin" },
+        { "value": "Bugbear" },
+        { "value": "Yuan-Ti Pureblood" }
       ]
     }]
   }

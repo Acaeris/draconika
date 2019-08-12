@@ -14,6 +14,8 @@ import { ElectronService } from './providers/electron.service';
 
 import { WebviewDirective } from './directives/webview.directive';
 
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+
 import { GeneratorModule } from './components/generator/generator.module';
 import { HomeModule } from './components/home/home.module';
 
@@ -39,6 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule.forRoot(),
     HttpClientModule,
     AppRoutingModule,
+    CKEditorModule,
     HomeModule,
     GeneratorModule,
     TranslateModule.forRoot({

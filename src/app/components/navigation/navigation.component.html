@@ -1,4 +1,13 @@
 <div class="ui inverted violet menu">
-  <a class="item" [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">{{ 'NAVIGATION.HOME' | translate }}</a>
-  <a class="icon item" [routerLink]="['/generator']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="industry icon"></i></a>
+  <div class="ui dropdown item">
+    {{ 'NAVIGATION.HOME' | translate }}
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item"><i class="file icon"></i> New</a>
+      <a class="item"><i class="folder open icon"></i> Open</a>
+      <a class="item"><i class="save icon"></i> Save</a>
+    </div>
+  </div>
+  <a class="icon item" [routerLink]="['/generator']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="dice d20 icon"></i></a>
+  <a class="icon item" [routerLink]="['/character-sheet']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="user icon"></i></a>
 </div>
