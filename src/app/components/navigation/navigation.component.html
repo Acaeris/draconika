@@ -2,10 +2,27 @@
   <div class="ui dropdown item">
     {{ 'NAVIGATION.HOME' | translate }}
     <i class="dropdown icon"></i>
-    <div class="menu">
-      <a class="item"><i class="file icon"></i> New</a>
-      <a class="item"><i class="folder open icon"></i> Open</a>
-      <a class="item"><i class="save icon"></i> Save</a>
+    <div class="inverted violet menu">
+      <a class="item" (click)="newCampaign($event)">
+        <i class="file icon"></i> New Campaign
+      </a>
+      <a class="item" (click)="fileOpen($event)">
+        <i class="folder open icon"></i> Open Campaign
+      </a>
+      <a class="item" (click)="fileSave($event)">
+        <i class="save icon"></i> Save Campaign
+      </a>
+      <a class="item" (click)="fileSaveAs($event)">
+        <i class="save icon"></i> Save Campaign As...
+      </a>
+      <div class="divider"></div>
+      <a class="item" [routerLink]="['/']">
+        <i class="cogs icon"></i> Settings
+      </a>
+      <div class="divider"></div>
+      <a class="item" (click)="closeWindow()">
+        <i class="times icon"></i> Quit
+      </a>
     </div>
   </div>
   <a class="icon item" [routerLink]="['/generator']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="dice d20 icon"></i></a>

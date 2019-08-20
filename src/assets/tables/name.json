@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/draconika-roll-file.json",
   "init": "format",
-  "version": "0.4.2",
+  "version": "0.4.4",
   "name": "NPC name generator",
   "uses": ["dragonborn-name", "dwarf-name", "elf-name", "gnome-name", "human-name", "kaldorei-name", "professions"],
   "parts": {
@@ -82,6 +82,7 @@
     }],
     "suffix": [{
       "entries": [
+        { "value": ", Guardian of the Wild" },
         { "value": ", Keeper of the Silent Grove" },
         { "value": ", Knight Errant" },
         { "value": ", Timewalker Druid" },
@@ -91,16 +92,20 @@
         { "value": " of the Claw" },
         { "value": " of the Fang" },
         { "value": " of the Flame" },
+        { "value": " of the Glade" },
         { "value": " of the Glen" },
         { "value": " of the Grove" },
         { "value": " of the Pack" },
         { "value": " of the Scythe" },
         { "value": " of the Shifting Sands" },
         { "value": " of the Talon" },
+        { "value": " the Courier" },
         { "value": " the Cunning" },
         { "value": " the Drowsy" },
+        { "value": " the Eternal Watcher" },
         { "value": " the Ever-living" },
         { "value": " the Gatekeeper" },
+        { "value": " the Haunted" },
         { "value": " the Hooded" },
         { "value": " the Jaded" },
         { "value": " the Kindred" },
@@ -112,7 +117,9 @@
         { "value": " the Silent" },
         { "value": " the Sleeper" },
         { "value": " the Sufferer" },
+        { "value": " the Traitor" },
         { "value": " the Unmerciful" },
+        { "value": " the Unpredictable" },
         { "value": " the Vile" },
         { "value": " the Wanderer" }
       ]

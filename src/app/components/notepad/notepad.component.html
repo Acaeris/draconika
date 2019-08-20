@@ -2,5 +2,5 @@
   <div class="ui inverted segment">
     <h4 class="ui header">Notepad</h4>
   </div>
-  <ckeditor [editor]="Editor" data="<p>You can write your own notes here!</p>"></ckeditor>
+  <ckeditor [editor]="Editor" [config]="notepadConfig" [(ngModel)]="campaign.notepad"></ckeditor>
 </div>

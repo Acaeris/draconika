@@ -8,4 +8,12 @@ import * as BalloonEditor from '@ckeditor/ckeditor5-build-balloon';
 })
 export class NotepadComponent {
   public Editor = BalloonEditor;
+  public campaign = {
+    notepad: null
+  };
+  public notepadConfig = {
+    placeholder: 'You can add your own notes here',
+  };
+
+  constructor() {}
 }
