@@ -1,4 +1,5 @@
 import { Directive, ElementRef, OnInit } from '@angular/core';
+import * as jQuery from 'jquery';
 
 @Directive({ selector: '.ui.dropdown'})
 export class DropdownDirective implements OnInit {
