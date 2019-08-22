@@ -24,6 +24,7 @@ export class GeneratorComponent implements OnInit {
   ngOnInit() {
     this.loadTablenames();
     this.updateRestrictions(this.rolling);
+    this.collection = this.tableService.get(this.rolling);
   }
 
   generate() {
