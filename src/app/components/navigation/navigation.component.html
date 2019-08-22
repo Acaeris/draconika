@@ -1,27 +1,28 @@
 <div class="ui menu">
+  <div class="header item">{{ 'WINDOW.TITLE' | translate }}</div>
   <div class="ui dropdown item">
-    {{ 'NAVIGATION.HOME' | translate }}
+    {{ 'NAVIGATION.CAMPAIGN_MENU' | translate }}
     <i class="dropdown icon"></i>
     <div class="menu">
       <a class="item" (click)="newCampaign()">
-        <i class="file icon"></i> New Campaign
+        <i class="file icon"></i> {{ 'NAVIGATION.CAMPAIGN.NEW' | translate }}
       </a>
       <a class="item" (click)="fileOpen()">
-        <i class="folder open icon"></i> Open Campaign
+        <i class="folder open icon"></i> {{ 'NAVIGATION.CAMPAIGN.OPEN' | translate }}
       </a>
       <a class="item" (click)="fileSave()">
-        <i class="save icon"></i> Save Campaign
+        <i class="save icon"></i> {{ 'NAVIGATION.CAMPAIGN.SAVE' | translate }}
       </a>
       <a class="item" (click)="fileSaveAs()">
-        <i class="save icon"></i> Save Campaign As...
+        <i class="save icon"></i> {{ 'NAVIGATION.CAMPAIGN.SAVE_AS' | translate }}
       </a>
       <div class="divider"></div>
       <a class="item" [routerLink]="['/']">
-        <i class="cogs icon"></i> Settings
+        <i class="cogs icon"></i> {{ 'NAVIGATION.CAMPAIGN.SETTINGS' | translate }}
       </a>
       <div class="divider"></div>
       <a class="item" (click)="closeWindow()">
-        <i class="times icon"></i> Quit
+        <i class="times icon"></i> {{ 'NAVIGATION.CAMPAIGN.QUIT' | translate }}
       </a>
     </div>
   </div>

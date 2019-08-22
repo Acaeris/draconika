@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
-import { HomeRoutingModule } from './home-routing.module';
+import { SettingsRoutingModule } from './settings-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
-import { HomeComponent } from './home.component';
+import { SettingsComponent } from './settings.component';
 
 @NgModule({
   imports: [
     SharedModule,
-    HomeRoutingModule,
+    SettingsRoutingModule,
     TranslateModule
   ],
   declarations: [
-    HomeComponent
+    SettingsComponent
   ],
   exports: [
-    HomeComponent
+    SettingsComponent
   ]
 })
-export class HomeModule {}
+export class SettingsModule {}

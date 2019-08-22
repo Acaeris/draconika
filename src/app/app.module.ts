@@ -17,10 +17,9 @@ import { WebviewDirective } from './directives/webview.directive';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 import { GeneratorModule } from './components/generator/generator.module';
-import { HomeModule } from './components/home/home.module';
+import { SettingsModule } from './components/settings/settings.module';
 
 import { AppComponent } from './app.component';
-import { WindowTitleComponent } from './components/window-title/window-title.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { SharedModule } from './components/shared/shared.module';
 import { NotepadComponent } from './components/notepad/notepad.component';
@@ -32,7 +31,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    WindowTitleComponent,
     NavigationComponent,
     NotepadComponent,
     WebviewDirective
@@ -42,7 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     AppRoutingModule,
     CKEditorModule,
-    HomeModule,
+    SettingsModule,
     GeneratorModule,
     TranslateModule.forRoot({
       loader: {

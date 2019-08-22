@@ -4,7 +4,7 @@
     <div class="ui inline dropdown">
       <div class="text">{{ collection.name }}</div>
       <i class="dropdown icon"></i>
-      <div class=" menu">
+      <div class="menu">
         <div class="item" *ngFor="let entry of tables | keyvalue" (click)="setTable(entry.key)">{{ entry.value }}</div>
       </div>
     </div>
