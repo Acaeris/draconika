@@ -1,19 +1,6 @@
 {
-  "PAGES": {
-    "GENERATOR": {
-      "SELECT": "Select a generator: "
-    },
-    "NOTEPAD": {
-      "TITLE": "Notepad",
-      "DEFAULT": "<p>You can add your own notes here!</p>"
-    },
-    "SETTINGS": {
-      "CAMPAIGN": "Campaign Settings",
-      "CAMPAIGN_NAME": "Campaign Name"
-    }
-  },
-  "WINDOW": {
-    "TITLE": "DRACONIKA"
+  "APP": {
+    "NAME": "DRACONIKA"
   },
   "NAVIGATION": {
     "CAMPAIGN_MENU": "Campaign",
@@ -24,6 +11,22 @@
       "SAVE_AS": "Save Campaign As...",
       "SETTINGS": "Settings",
       "QUIT": "Quit"
+    }
+  },
+  "GENERIC": {
+    "SAVE": "Save"
+  },
+  "PAGES": {
+    "GENERATOR": {
+      "SELECT": "Select a generator: "
+    },
+    "NOTEPAD": {
+      "TITLE": "Notepad",
+      "DEFAULT": "<p>You can add your own notes here!</p>"
+    },
+    "SETTINGS": {
+      "TITLE": "Campaign Settings",
+      "NAME": "Campaign Name"
     }
   },
   "GENERICS": {
