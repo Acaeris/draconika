@@ -1,3 +1,7 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.menu .item.active > .icon:not(.dropdown) {
+  color: @primaryHoverColor;
+}

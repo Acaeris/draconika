@@ -1,3 +1,17 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+@backgroundColor: @pageBackground;
+@color: @textColor;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+@labelHoverBackgroundColor: @primaryHoverColor;

@@ -20,13 +20,11 @@
         padding: 0 0.5em;
       }
     }
-  }
 
-  &.grid {
-    margin: 0 3px;
-  }
-
-  &.segment {
-    border-radius: 0;
+    > .segment {
+      border-left-width: 0;
+      border-right-width: 0;
+      border-top-width: 0;
+    }
   }
 }

@@ -1,3 +1,17 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+@borderRadius: @defaultBorderRadius;
+@background: @primaryBackgroundColor;
+
+/*--------------
+     Types
+---------------*/
+
+/* Striped */
+@stripedBackground: rgb(55, 62, 69);
