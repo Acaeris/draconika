@@ -1,3 +1,60 @@
 /*******************************
      User Global Variables
 *******************************/
+
+/*-------------------
+       Colors
+-------------------*/
+
+@primaryHoverColor: rgb(32, 168, 216);
+@primaryActiveColor: rgb(52, 59, 65);
+@primaryBackgroundColor: rgb(58, 65, 73);
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor: rgb(32, 168, 216);
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+@defaultBorderRadius: 0;
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground: rgb(47, 53, 58);
+
+@textColor: rgb(228, 231, 234);
+
+/*-------------------
+      Borders
+--------------------*/
+
+@borderColor: rgb(35, 40, 44);
+
+@interalBorderColor        : @borderColor;
+@solidInternalBorderColor  : @borderColor;
+
+/*-------------------
+     Neutral Text
+--------------------*/
+
+@darkTextColor               : rgba(228, 231, 234, 0.85);
+@mutedTextColor              : rgba(228, 231, 234, 0.6);
+@lightTextColor              : rgba(228, 231, 234, 0.4);
+
+@unselectedTextColor         : rgba(228, 231, 234, 0.4);
+@hoveredTextColor            : rgba(228, 231, 234, 0.8);
+@pressedTextColor            : rgba(228, 231, 234, 0.9);
+@selectedTextColor           : rgba(228, 231, 234, 0.95);
+@disabledTextColor           : rgba(228, 231, 234, 0.2);
+
+/*--------------
+   Form Input
+---------------*/
+
+@inputBackground        : rgb(81,91,101);

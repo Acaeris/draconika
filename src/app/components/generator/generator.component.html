@@ -1,5 +1,5 @@
 <div class="ui generator">
-  <div class="ui inverted segment">
+  <div class="ui segment">
     {{ 'PAGES.GENERATOR.SELECT' | translate }}
     <div class="ui inline dropdown">
       <div class="text">{{ collection.name }}</div>
@@ -12,9 +12,9 @@
 
   <div class="content">
     <section class="restrictions">
-      <div class="ui inverted segment" *ngIf="showOptions">
-        <div class="ui inverted mini form">
-          <h4 class="ui inverted dividing header">Select Restrictions:</h4>
+      <div class="ui segment" *ngIf="showOptions">
+        <div class="ui mini form">
+          <h4 class="ui dividing header">Select Restrictions:</h4>
           <div *ngFor="let restriction of options | keyvalue" class="field">
             <label>{{ restriction.key | titlecase }}</label>
             <select [name]="restriction.key" [(ngModel)]="restrictions[restriction.key]" class="ui dropdown" multiple="">
@@ -23,12 +23,12 @@
           </div>
         </div>
       </div>
-      <button class="ui black button" (click)="clear()"><i class="inverted red delete icon"></i> Clear</button>
-      <button class="ui violet button" (click)="generate()"><i class="inverted dice d20 icon"></i> Generate</button>
+      <button class="ui button" (click)="clear()"><i class="red delete icon"></i> Clear</button>
+      <button class="ui primary button" (click)="generate()"><i class="dice d20 icon"></i> Generate</button>
     </section>
 
     <section class="results">
-      <table class="ui inverted striped table" *ngIf="output.length > 0">
+      <table class="ui striped table" *ngIf="output.length > 0">
         <tbody>
           <tr *ngFor="let entry of output">
             <td [innerHTML]="entry"></td>

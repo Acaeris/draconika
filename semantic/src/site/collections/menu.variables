@@ -1,3 +1,30 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+/*-------------------
+      Collection
+--------------------*/
+
+/* Menu */
+@background: @primaryBackgroundColor;
+
+/*--------------
+     States
+---------------*/
+
+/* Hovered Item */
+@hoverItemBackground: @primaryHoverColor;
+
+/* Active Item */
+@activeItemBackground: @primaryActiveColor;
+
+/*--------------
+    Couplings
+---------------*/
+
+/* Dropdown in Menu */
+@dropdownBackground: @primaryBackgroundColor;
+
+
+@dropdownHoveredItemBackground: @primaryHoverColor;
