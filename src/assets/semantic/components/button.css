@@ -20,8 +20,8 @@
   outline: none;
   border: none;
   vertical-align: baseline;
-  background: #E0E1E2 none;
-  color: rgba(0, 0, 0, 0.6);
+  background: #73818f none;
+  color: #ffffff;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0 0.25em 0 0;
   padding: 0.78571429em 1.5em 0.78571429em;
@@ -58,7 +58,7 @@
 ---------------*/
 
 .ui.button:hover {
-  background-color: #CACBCD;
+  background-color: #5c6873;
   background-image: none;
   -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 #23282c inset;
           box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 #23282c inset;
@@ -73,7 +73,7 @@
 ---------------*/
 
 .ui.button:focus {
-  background-color: #CACBCD;
+  background-color: #5c6873;
   color: rgba(228, 231, 234, 0.8);
   background-image: none;
   -webkit-box-shadow: '';
@@ -801,7 +801,7 @@
 .ui.basic.buttons .button,
 .ui.basic.button {
   background: transparent none;
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
   font-weight: normal;
   border-radius: 0.28571429rem;
   text-transform: none;
@@ -936,26 +936,26 @@
   padding: 0.5em !important;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
   background: none;
 }
 .ui.tertiary.button:hover {
-  -webkit-box-shadow: inset 0 -0.2em 0 #666666;
-          box-shadow: inset 0 -0.2em 0 #666666;
-  color: #333333;
+  -webkit-box-shadow: inset 0 -0.2em 0 #ffffff;
+          box-shadow: inset 0 -0.2em 0 #ffffff;
+  color: #ffffff;
   background: none;
 }
 .ui.tertiary.button:focus {
-  -webkit-box-shadow: inset 0 -0.2em 0 #666666;
-          box-shadow: inset 0 -0.2em 0 #666666;
-  color: #333333;
+  -webkit-box-shadow: inset 0 -0.2em 0 #ffffff;
+          box-shadow: inset 0 -0.2em 0 #ffffff;
+  color: #ffffff;
   background: none;
 }
 .ui.tertiary.button:active {
-  -webkit-box-shadow: inset 0 -0.2em 0 #999999;
-          box-shadow: inset 0 -0.2em 0 #999999;
+  -webkit-box-shadow: inset 0 -0.2em 0 #ffffff;
+          box-shadow: inset 0 -0.2em 0 #ffffff;
   border-radius: 0.28571429rem 0.28571429rem 0 0;
-  color: #666666;
+  color: #ffffff;
   background: none;
 }
 
@@ -2193,7 +2193,7 @@
 .ui.inverted.yellow.button:active {
   -webkit-box-shadow: none ;
           box-shadow: none ;
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
 }
 .ui.inverted.yellow.buttons .button:hover,
 .ui.inverted.yellow.button:hover {
@@ -2378,7 +2378,7 @@
 .ui.inverted.olive.button:active {
   -webkit-box-shadow: none ;
           box-shadow: none ;
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
 }
 .ui.inverted.olive.buttons .button:hover,
 .ui.inverted.olive.button:hover {
@@ -2748,7 +2748,7 @@
 .ui.inverted.teal.button:active {
   -webkit-box-shadow: none ;
           box-shadow: none ;
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
 }
 .ui.inverted.teal.buttons .button:hover,
 .ui.inverted.teal.button:hover {
@@ -3858,7 +3858,7 @@
 .ui.inverted.grey.button:active {
   -webkit-box-shadow: none ;
           box-shadow: none ;
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
 }
 .ui.inverted.grey.buttons .button:hover,
 .ui.inverted.grey.button:hover {
