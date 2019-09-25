@@ -4,6 +4,7 @@ import { RollCollection } from '../../models/roll-collection';
 import { Restrictions } from '../../models/restrictions';
 import * as fs from 'fs';
 import { RollService } from '../../providers/roll.service';
+import { CampaignService } from '../../providers/campaign.service';
 
 @Component({
   selector: 'app-generator',
@@ -19,7 +20,11 @@ export class GeneratorComponent implements OnInit {
   showOptions: boolean;
   rolling = 'name';
 
-  constructor(private tableService: TableService, private rollService: RollService) {}
+  constructor(
+    private tableService: TableService,
+    private rollService: RollService,
+    private campaignService: CampaignService
+  ) {}
 
   ngOnInit() {
     this.loadTablenames();

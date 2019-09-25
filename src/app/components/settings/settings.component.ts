@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CampaignService } from '../../providers/campaign.service';
+import { Campaign } from '../../models/campaign';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./settings.component.scss']
 })
 export class SettingsComponent implements OnInit {
-  constructor() {}
+  private campaign: Campaign;
 
-  ngOnInit() {}
+  constructor(private campaignService: CampaignService) {}
+
+  ngOnInit() {
+    this.campaign = this.campaignService.getCampaign();
+  }
+
+  save() {
+    this.campaignService.setCampaign(this.campaign);
+  }
 }

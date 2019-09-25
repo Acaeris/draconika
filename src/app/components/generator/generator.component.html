@@ -28,11 +28,17 @@
     </section>
 
     <section class="results">
+      <span>Campaign: {{ campaignService.campaign.name }}</span>
       <table class="ui striped table" *ngIf="output.length > 0">
         <tbody>
           <tr *ngFor="let entry of output">
             <td [innerHTML]="entry"></td>
-            <td class="right aligned"><i class="caret right icon"></i></td>
+            <td class="right aligned">
+              <i class="icons">
+                <i class="sticky note icon"></i>
+                <i class="inverted green top right corner plus icon"></i>
+              </i>
+            </td>
           </tr>
         </tbody>
       </table>

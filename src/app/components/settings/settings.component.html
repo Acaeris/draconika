@@ -4,9 +4,9 @@
     <form class="ui form">
       <div class="field">
         <label>{{ 'PAGES.SETTINGS.CAMPAIGN_NAME' | translate }}</label>
-        <input type="text" name="campaign-name" placeholder="First Adventure">
+        <input type="text" name="campaign-name" placeholder="First Adventure" [(ngModel)]="campaign.name">
       </div>
-      <button class="ui primary button" type="submit">{{ 'GENERICS.SAVE' | translate }}</button>
+      <button class="ui primary button" type="submit" (click)="save()">{{ 'GENERICS.SAVE' | translate }}</button>
     </form>
   </div>
 </div>

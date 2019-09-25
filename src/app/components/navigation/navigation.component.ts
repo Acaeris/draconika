@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { remote } from 'electron';
-import { writeFileSync } from 'fs';
+import { CampaignService } from '../../providers/campaign.service';
 
 @Component({
   selector: 'app-navigation',
@@ -8,34 +8,22 @@ import { writeFileSync } from 'fs';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-  constructor() {}
+  constructor(private campaignService: CampaignService) {}
 
   newCampaign() {
-    console.log('Clear campaign data');
+    this.campaignService.clear();
   }
 
   fileOpen() {
-    remote.dialog.showOpenDialog(remote.getCurrentWindow(), {
-      title: 'Select a campaign',
-      filters: [{ name: 'Draconika Campaign', extensions: ['drake'] }],
-      properties: ['openFile']
-    }, (filePaths: string[], bookmarks: string[]) => {
-      console.log(filePaths);
-      console.log(bookmarks);
-    });
+    this.campaignService.open();
   }
 
   fileSave() {
-    console.log('Save current campaign data file');
+    this.campaignService.save();
   }
 
   fileSaveAs() {
-    remote.dialog.showSaveDialog(remote.getCurrentWindow(), {
-      title: 'Save campaign',
-      filters: [{ name: 'Draconika Campaign', extensions: ['drake'] }]
-    }, (filename: string) => {
-      writeFileSync(filename, 'Hello World!', 'utf-8');
-    });
+    this.campaignService.saveAs();
   }
 
   closeWindow() {

@@ -4,16 +4,16 @@
     {{ 'NAVIGATION.CAMPAIGN_MENU' | translate }}
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a class="item" (click)="newCampaign()">
+      <a class="item" (click)="campaignService.clear()">
         <i class="file icon"></i> {{ 'NAVIGATION.CAMPAIGN.NEW' | translate }}
       </a>
-      <a class="item" (click)="fileOpen()">
+      <a class="item" (click)="campaignService.open()">
         <i class="folder open icon"></i> {{ 'NAVIGATION.CAMPAIGN.OPEN' | translate }}
       </a>
-      <a class="item" (click)="fileSave()">
+      <a class="item" (click)="campaignService.save()">
         <i class="save icon"></i> {{ 'NAVIGATION.CAMPAIGN.SAVE' | translate }}
       </a>
-      <a class="item" (click)="fileSaveAs()">
+      <a class="item" (click)="campaignService.saveAs()">
         <i class="save icon"></i> {{ 'NAVIGATION.CAMPAIGN.SAVE_AS' | translate }}
       </a>
       <div class="divider"></div>

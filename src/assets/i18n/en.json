@@ -25,8 +25,8 @@
       "DEFAULT": "<p>You can add your own notes here!</p>"
     },
     "SETTINGS": {
-      "TITLE": "Campaign Settings",
-      "NAME": "Campaign Name"
+      "CAMPAIGN": "Campaign Settings",
+      "CAMPAIGN_NAME": "Campaign Name"
     }
   },
   "GENERICS": {
