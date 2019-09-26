@@ -1,6 +1,6 @@
 <div class="ui notepad">
   <div class="ui segment">
-    <h4 class="ui header">Notepad</h4>
+    <h4 class="ui header">{{ 'PAGES.NOTEPAD.TITLE' | translate }}</h4>
   </div>
-  <ckeditor [editor]="Editor" [config]="notepadConfig" [(ngModel)]="campaign.notepad"></ckeditor>
+  <ckeditor [editor]="Editor" [config]="notepadConfig" [(ngModel)]="campaignService.campaign.notepad"></ckeditor>
 </div>

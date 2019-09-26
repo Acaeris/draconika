@@ -6,4 +6,10 @@ body {
   height: 100%;
 }
 
+// Fomantic missing FontAwesome icon
 i.icon.dice.d20:before { content: "\f6cf" }
+
+// Styling tweaks for CKEditor
+.ui.notepad .ck-content blockquote {
+  border-left-color: rgb(117,60,41);
+}

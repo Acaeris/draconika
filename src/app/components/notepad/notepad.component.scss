@@ -2,10 +2,10 @@
   &.notepad {
     background: url('../../../assets/images/notepad.jpg') no-repeat center top;
     background-size: cover;
-    border-left: 1px solid #444;
     width: 400px;
     height: 100%;
     border-left: 1px solid rgb(35, 40, 44);
+    color: #000;
 
     > .segment {
       border-top-width: 0;

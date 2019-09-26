@@ -1,14 +1,14 @@
-import { HomeComponent } from './home.component';
+import { SettingsComponent } from './settings.component';
 import { ComponentFixture, async, TestBed } from '@angular/core/testing';
 import { TranslateModule } from '@ngx-translate/core';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture < HomeComponent > ;
+describe('SettingsComponent', () => {
+  let component: SettingsComponent;
+  let fixture: ComponentFixture < SettingsComponent > ;
 
   beforeEach(async (() => {
     TestBed.configureTestingModule({
-        declarations: [HomeComponent],
+        declarations: [SettingsComponent],
         imports: [
           TranslateModule.forRoot()
         ]
@@ -17,7 +17,7 @@ describe('HomeComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(SettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
