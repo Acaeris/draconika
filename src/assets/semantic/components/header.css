@@ -320,13 +320,13 @@ h5.ui.header .sub.header {
 --------------------*/
 
 .ui.primary.header {
-  color: #20a8d8;
+  color: #8f51f5;
 }
 a.ui.primary.header:hover {
-  color: #149bca;
+  color: #7d30fd;
 }
 .ui.primary.dividing.header {
-  border-bottom: 2px solid #20a8d8;
+  border-bottom: 2px solid #8f51f5;
 }
 .ui.inverted.primary.header.header.header {
   color: #54C8FF;
@@ -643,7 +643,7 @@ a.ui.inverted.black.header.header.header:hover {
 
 .ui.dividing.header {
   padding-bottom: 0.21428571rem;
-  border-bottom: 1px solid #23282c;
+  border-bottom: 1px solid transparent;
 }
 .ui.dividing.header .sub.header {
   padding-bottom: 0.21428571rem;
@@ -660,12 +660,12 @@ a.ui.inverted.black.header.header.header:hover {
 --------------------*/
 
 .ui.block.header {
-  background: #F3F4F5;
+  background: #161b2f;
   padding: 0.78571429rem 1rem;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 1px solid #D4D4D5;
-  border-radius: 0;
+  border-radius: 0.28571429rem;
 }
 .ui.tiny.block.header {
   font-size: 0.85714286rem;
@@ -688,7 +688,7 @@ a.ui.inverted.black.header.header.header:hover {
 --------------------*/
 
 .ui.attached.header {
-  background: #FFFFFF;
+  background: #161b2f;
   padding: 0.78571429rem 1rem;
   margin: 0 -1px 0 -1px;
   -webkit-box-shadow: none;
@@ -697,16 +697,16 @@ a.ui.inverted.black.header.header.header:hover {
   border-radius: 0;
 }
 .ui.attached.block.header {
-  background: #F3F4F5;
+  background: #161b2f;
 }
 .ui.attached:not(.top).header {
   border-top: none;
 }
 .ui.top.attached.header {
-  border-radius: 0 0 0 0;
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 .ui.bottom.attached.header {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 
 /* Attached Sizes */
@@ -751,3 +751,16 @@ a.ui.inverted.black.header.header.header:hover {
          Site Overrides
 *******************************/
 
+.ui.attached.header {
+  border: none;
+}
+h4.ui.attached.header,
+h4.ui.block.header {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1rem 1.2rem;
+}
+.ui.block.header {
+  border: none;
+  border-radius: 0;
+}

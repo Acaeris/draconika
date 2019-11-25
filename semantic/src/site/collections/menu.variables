@@ -20,11 +20,21 @@
 @activeItemBackground: @primaryActiveColor;
 
 /*--------------
+      Types
+---------------*/
+
+/* Vertical */
+@verticalBackground: @primaryBackgroundColor;
+
+/* Icon */
+@iconMenuItemColor: @darkTextColor;
+
+/*--------------
     Couplings
 ---------------*/
 
 /* Dropdown in Menu */
-@dropdownBackground: @primaryBackgroundColor;
+@dropdownBackground: rgb(25,32,55);
 
 
 @dropdownHoveredItemBackground: @primaryHoverColor;

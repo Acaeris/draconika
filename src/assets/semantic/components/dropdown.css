@@ -51,7 +51,7 @@
   min-width: max-content;
   margin: 0;
   padding: 0 0;
-  background: #343b41;
+  background: #192037;
   font-size: 1em;
   text-shadow: none;
   text-align: left;
@@ -360,7 +360,7 @@
           transform: rotateZ(0deg);
   min-width: 14em;
   min-height: 2.71428571em;
-  background: #515b65;
+  background: #192037;
   display: inline-block;
   padding: 0.78571429em 3.2em 0.78571429em 1em;
   color: #e4e7ea;
@@ -845,7 +845,7 @@ select.ui.dropdown {
 
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
-  background: #20a8d8;
+  background: #8f51f5;
   color: rgba(228, 231, 234, 0.95);
   z-index: 13;
 }
@@ -1869,3 +1869,9 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 
+.ui.dropdown .menu {
+  border: none;
+}
+.ui.selection.dropdown {
+  border: none;
+}

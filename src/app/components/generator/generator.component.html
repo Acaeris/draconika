@@ -1,20 +1,23 @@
 <div class="ui generator">
-  <div class="ui segment">
-    {{ 'PAGES.GENERATOR.SELECT' | translate }}
-    <div class="ui inline dropdown">
-      <div class="text">{{ collection.name }}</div>
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <div class="item" *ngFor="let entry of tables | keyvalue" (click)="setTable(entry.key)">{{ entry.value }}</div>
-      </div>
-    </div>
-  </div>
-
+  <h2 class="ui header">
+    <i class="dice d20 icon"></i>
+    Random Generator
+  </h2>
   <div class="content">
     <section class="restrictions">
-      <div class="ui segment" *ngIf="showOptions">
+      <h4 class="ui top attached header">{{ 'PAGES.GENERATOR.SELECT' | translate }}</h4>
+      <div class="ui bottom attached segment">
+        <div class="ui selection dropdown">
+          <div class="text">{{ collection.name }}</div>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item" *ngFor="let entry of tables | keyvalue" (click)="setTable(entry.key)">{{ entry.value }}</div>
+          </div>
+        </div>
+      </div>
+      <h4 class="ui top attached header" *ngIf="showOptions">{{ 'PAGES.GENERATOR.RESTRICTIONS' | translate }}</h4>
+      <div class="ui bottom attached segment" *ngIf="showOptions">
         <div class="ui mini form">
-          <h4 class="ui dividing header">Select Restrictions:</h4>
           <div *ngFor="let restriction of options | keyvalue" class="field">
             <label>{{ restriction.key | titlecase }}</label>
             <select [name]="restriction.key" [(ngModel)]="restrictions[restriction.key]" class="ui dropdown" multiple="">
@@ -28,8 +31,8 @@
     </section>
 
     <section class="results">
-      <span>Campaign: {{ campaignService.campaign.name }}</span>
-      <table class="ui striped table" *ngIf="output.length > 0">
+      <h4 class="ui top attached header">{{ 'PAGES.GENERATOR.RESULTS' | translate }}</h4>
+      <table class="ui bottom attached striped table" *ngIf="output.length > 0">
         <tbody>
           <tr *ngFor="let entry of output">
             <td [innerHTML]="entry"></td>

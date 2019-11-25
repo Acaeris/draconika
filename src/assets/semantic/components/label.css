@@ -18,7 +18,7 @@
   line-height: 1;
   vertical-align: baseline;
   margin: 0 0.14285714em;
-  background-color: #2f353a;
+  background-color: #212840;
   background-image: none;
   padding: 0.5833em 0.833em;
   color: #e4e7ea;
@@ -167,7 +167,7 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: #2f353a;
+  background: #212840;
   padding: 0.5833em 0.833em 0.5833em 0.5em;
   border-radius: 0.28571429rem;
   -webkit-box-shadow: none;
@@ -254,7 +254,7 @@ a.ui.label {
   margin: 0;
   padding: 0;
   text-align: center;
-  border-color: #2f353a;
+  border-color: #212840;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -488,8 +488,8 @@ a.ui.label {
 
 .ui.labels a.label:hover,
 a.ui.label:hover {
-  background-color: #20a8d8;
-  border-color: #20a8d8;
+  background-color: #8f51f5;
+  border-color: #8f51f5;
   background-image: none;
   color: rgba(228, 231, 234, 0.8);
 }
@@ -563,7 +563,7 @@ a.ui.active.label:hover:before {
 .ui.basic.labels .label,
 .ui.basic.label {
   background: none #FFFFFF;
-  border: 1px solid #23282c;
+  border: 1px solid transparent;
   color: #e4e7ea;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -602,13 +602,13 @@ a.ui.basic.label:hover {
 .ui.inverted.labels .label,
 .ui.inverted.label {
   color: rgba(255, 255, 255, 0.9);
-  background-color: #010202;
+  background-color: #000000;
 }
 .ui.inverted.corner.label {
-  border-color: #010202;
+  border-color: #000000;
 }
 .ui.inverted.corner.label:hover {
-  border-color: #2f353a;
+  border-color: #212840;
   -webkit-transition: none;
   transition: none;
 }
@@ -628,36 +628,36 @@ a.ui.basic.label:hover {
 
 .ui.primary.labels .label,
 .ui.ui.ui.primary.label {
-  background-color: #20a8d8;
-  border-color: #20a8d8;
+  background-color: #8f51f5;
+  border-color: #8f51f5;
   color: rgba(255, 255, 255, 0.9);
 }
 
 /* Link */
 .ui.primary.labels a.label:hover,
 a.ui.ui.ui.primary.label:hover {
-  background-color: #149bca;
-  border-color: #149bca;
+  background-color: #7d30fd;
+  border-color: #7d30fd;
   color: #FFFFFF;
 }
 
 /* Ribbon */
 .ui.ui.ui.primary.ribbon.label {
-  border-color: #1985ac;
+  border-color: #7021f2;
 }
 
 /* Basic */
 .ui.basic.labels .primary.label,
 .ui.ui.ui.basic.primary.label {
   background: none #FFFFFF;
-  border-color: #20a8d8;
-  color: #20a8d8;
+  border-color: #8f51f5;
+  color: #8f51f5;
 }
 .ui.basic.labels a.primary.label:hover,
 a.ui.ui.ui.basic.primary.label:hover {
   background: none #FFFFFF;
-  border-color: #149bca;
-  color: #149bca;
+  border-color: #7d30fd;
+  color: #7d30fd;
 }
 
 /* Inverted */

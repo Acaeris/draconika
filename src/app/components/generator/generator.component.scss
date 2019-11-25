@@ -1,9 +1,17 @@
 :host {
   flex: auto;
+  overflow: scroll;
 }
 
 .ui {
   &.generator {
+    margin: 8px;
+
+    h2.header {
+      margin: 1.5rem 0.7rem;
+      font-weight: 400;
+    }
+
     .content {
       display: flex;
       height: 100%;
@@ -17,12 +25,6 @@
         flex: auto;
         padding: 0 0.5em;
       }
-    }
-
-    > .segment {
-      border-left-width: 0;
-      border-right-width: 0;
-      border-top-width: 0;
     }
   }
 }

@@ -65,10 +65,10 @@
 .ui.left.dividing.rail {
   padding: 0 2.5rem 0 0;
   margin: 0 2.5rem 0 0;
-  border-right: 1px solid #23282c;
+  border-right: 1px solid transparent;
 }
 .ui.right.dividing.rail {
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
   padding: 0 0 0 2.5rem;
   margin: 0 0 0 2.5rem;
 }

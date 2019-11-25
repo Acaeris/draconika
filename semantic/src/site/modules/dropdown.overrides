@@ -1,3 +1,11 @@
 /*******************************
         User Overrides
 *******************************/
+
+.ui.dropdown .menu {
+  border: none;
+}
+
+.ui.selection.dropdown {
+  border: none;
+}

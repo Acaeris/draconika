@@ -18,7 +18,9 @@
   },
   "PAGES": {
     "GENERATOR": {
-      "SELECT": "Select a generator: "
+      "SELECT": "Select a generator",
+      "RESTRICTIONS": "Select Restrictions",
+      "RESULTS": "Results"
     },
     "NOTEPAD": {
       "TITLE": "Notepad",

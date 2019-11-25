@@ -107,8 +107,8 @@
   line-height: 1.21428571em;
   padding: 0.67857143em 1em;
   font-size: 1em;
-  background: #515b65;
-  border: 1px solid #23282c;
+  background: #192037;
+  border: 1px solid transparent;
   color: #e4e7ea;
   border-radius: 0.28571429rem;
   -webkit-box-shadow: 0 0 0 0 transparent inset;
@@ -123,8 +123,8 @@
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   padding: 0.78571429em 1em;
-  background: #515b65;
-  border: 1px solid #23282c;
+  background: #192037;
+  border: 1px solid transparent;
   outline: none;
   color: #e4e7ea;
   border-radius: 0.28571429rem;
@@ -208,8 +208,8 @@
   display: block;
   height: auto;
   width: 100%;
-  background: #515b65;
-  border: 1px solid #23282c;
+  background: #192037;
+  border: 1px solid transparent;
   border-radius: 0.28571429rem;
   -webkit-box-shadow: 0 0 0 0 transparent inset;
           box-shadow: 0 0 0 0 transparent inset;
@@ -417,17 +417,17 @@
 .ui.form input[type="file"]:focus,
 .ui.form input[type="url"]:focus {
   color: rgba(228, 231, 234, 0.95);
-  border-color: #85B7D9;
+  border-color: #8f51f5;
   border-radius: 0.28571429rem;
-  background: #515b65;
+  background: #192037;
   -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.35) inset;
           box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.35) inset;
 }
 .ui.form textarea:focus {
   color: rgba(228, 231, 234, 0.95);
-  border-color: #85B7D9;
+  border-color: #8f51f5;
   border-radius: 0.28571429rem;
-  background: #515b65;
+  background: #192037;
   -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.35) inset;
           box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.35) inset;
   -webkit-appearance: none;
@@ -670,7 +670,7 @@
   z-index: 100;
 }
 .ui.loading.form.segments:before {
-  border-radius: 0;
+  border-radius: 0.28571429rem;
 }
 .ui.loading.form:after {
   position: absolute;
@@ -767,7 +767,7 @@
 .ui.inverted.form input[type="text"],
 .ui.inverted.form input[type="file"],
 .ui.inverted.form input[type="url"] {
-  background: #515b65;
+  background: #192037;
   border-color: rgba(255, 255, 255, 0.1);
   color: #e4e7ea;
   -webkit-box-shadow: none;

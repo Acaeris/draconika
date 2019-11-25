@@ -698,7 +698,7 @@ ol.ui.suffixed.list li:before,
 --------------------*/
 
 .ui.divided.list > .item {
-  border-top: 1px solid #23282c;
+  border-top: 1px solid transparent;
 }
 .ui.divided.list .list > .item {
   border-top: none;
@@ -762,7 +762,7 @@ ol.ui.suffixed.list li:before,
 }
 .ui.divided.horizontal.list > .item {
   border-top: none;
-  border-right: 1px solid #23282c;
+  border-right: 1px solid transparent;
   margin: 0;
   line-height: 0.6;
 }
@@ -783,12 +783,12 @@ ol.ui.suffixed.list li:before,
 
 .ui.celled.list > .item,
 .ui.celled.list > .list {
-  border-top: 1px solid #23282c;
+  border-top: 1px solid transparent;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 .ui.celled.list > .item:last-child {
-  border-bottom: 1px solid #23282c;
+  border-bottom: 1px solid transparent;
 }
 
 /* Padding on all elements */
@@ -844,7 +844,7 @@ ol.ui.suffixed.list li:before,
 .ui.horizontal.celled.list .list > .item,
 .ui.horizontal.celled.list > .item {
   border-top: none;
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
   margin: 0;
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -853,7 +853,7 @@ ol.ui.suffixed.list li:before,
 .ui.horizontal.celled.list .list > .item:last-child,
 .ui.horizontal.celled.list > .item:last-child {
   border-bottom: none;
-  border-right: 1px solid #23282c;
+  border-right: 1px solid transparent;
 }
 
 /* Inverted */

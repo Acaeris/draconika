@@ -33,7 +33,7 @@
 ---------------*/
 
 .ui.divider:not(.vertical):not(.horizontal) {
-  border-top: 1px solid #23282c;
+  border-top: 1px solid transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -100,7 +100,7 @@
   left: 50%;
   content: '';
   z-index: 3;
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   width: 0;
   height: calc(100% - 1rem);
@@ -212,8 +212,8 @@
 .ui.divider.inverted,
 .ui.divider.inverted:after,
 .ui.divider.inverted:before {
-  border-top-color: #23282c !important;
-  border-left-color: #23282c !important;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
   border-bottom-color: rgba(255, 255, 255, 0.15) !important;
   border-right-color: rgba(255, 255, 255, 0.15) !important;
 }

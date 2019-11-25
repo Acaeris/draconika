@@ -2,6 +2,11 @@
          Site Overrides
 *******************************/
 
+.ui.menu {
+  box-shadow: none;
+  border: none;
+}
+
 .ui.menu .item.active > .icon:not(.dropdown) {
   color: @primaryHoverColor;
 }

@@ -3,30 +3,26 @@
 *******************************/
 
 /*-------------------
-       Colors
--------------------*/
-
-@primaryHoverColor: rgb(32, 168, 216);
-@primaryActiveColor: rgb(52, 59, 65);
-@primaryBackgroundColor: rgb(58, 65, 73);
-
-/*-------------------
     Brand Colors
 --------------------*/
 
-@primaryColor: rgb(32, 168, 216);
+@primaryColor: rgb(143, 81, 245);
+@mainHeaderBackgroundColor: rgb(22, 27, 47);
 
 /*-------------------
-    Border Radius
---------------------*/
+       Colors
+-------------------*/
 
-@defaultBorderRadius: 0;
+@primaryHoverColor: rgb(143, 81, 245);
+@primaryActiveColor: @primaryColor;
+@primaryBackgroundColor: rgb(39, 48, 75);
 
 /*-------------------
         Page
 --------------------*/
 
-@pageBackground: rgb(47, 53, 58);
+@pageBackground: rgb(33, 40, 64);
+/* @pageBackground: rgb(47, 53, 58); */
 
 @textColor: rgb(228, 231, 234);
 
@@ -34,7 +30,7 @@
       Borders
 --------------------*/
 
-@borderColor: rgb(35, 40, 44);
+@borderColor: transparent;
 
 @interalBorderColor        : @borderColor;
 @solidInternalBorderColor  : @borderColor;
@@ -57,4 +53,4 @@
    Form Input
 ---------------*/
 
-@inputBackground        : rgb(81,91,101);
+@inputBackground        : rgb(25, 32, 55);

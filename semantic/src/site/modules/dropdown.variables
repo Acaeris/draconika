@@ -13,7 +13,7 @@
 --------------------*/
 
 /* Menu */
-@menuBackground: rgb(52,59,65);
+@menuBackground: rgb(25, 32, 55);
 
 /* Menu Divider */
 @menuDividerColor: @borderColor;
@@ -33,4 +33,5 @@
    Selection
 --------------*/
 
+@selectionBackground: rgb(25, 32, 55);
 @selectionItemDivider: 1px solid @solidInternalBorderColor;

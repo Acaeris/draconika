@@ -14,4 +14,4 @@
 ---------------*/
 
 /* Striped */
-@stripedBackground: rgb(55, 62, 69);
+@stripedBackground: rgb(28, 34, 56);

@@ -1,8 +1,7 @@
-<div class="ui menu">
-  <div class="header item">{{ 'APP.NAME' | translate }}</div>
-  <div class="ui dropdown item">
-    {{ 'NAVIGATION.CAMPAIGN_MENU' | translate }}
-    <i class="dropdown icon"></i>
+<div class="ui left fixed vertical icon menu">
+  <div class="icon item"><i class="dragon icon"></i></div>
+  <div class="ui dropdown icon item">
+    <i class="book open icon"></i>
     <div class="menu">
       <a class="item" (click)="campaignService.clear()">
         <i class="file icon"></i> {{ 'NAVIGATION.CAMPAIGN.NEW' | translate }}
@@ -28,4 +27,5 @@
   </div>
   <a class="icon item" [routerLink]="['/generator']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="dice d20 icon"></i></a>
   <a class="icon item" [routerLink]="['/character-sheet']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="user icon"></i></a>
+  <a class="icon item" [routerLink]="['/dungeon-map']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><i class="dungeon icon"></i></a>
 </div>

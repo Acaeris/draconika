@@ -1,3 +1,19 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.attached.header {
+  border: none;
+}
+
+h4.ui.attached.header,
+h4.ui.block.header {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 1rem 1.2rem;
+}
+
+.ui.block.header {
+  border: none;
+  border-radius: 0;
+}

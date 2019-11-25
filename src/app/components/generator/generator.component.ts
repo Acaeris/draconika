@@ -5,6 +5,7 @@ import { Restrictions } from '../../models/restrictions';
 import * as fs from 'fs';
 import { RollService } from '../../providers/roll.service';
 import { CampaignService } from '../../providers/campaign.service';
+import { Entry } from '../../models/entry';
 
 @Component({
   selector: 'app-generator',
@@ -60,6 +61,7 @@ export class GeneratorComponent implements OnInit {
   setTable(name: string) {
     this.rolling = name;
     this.updateRestrictions(this.rolling);
+    this.collection = this.tableService.get(this.rolling);
   }
 
   updateRestrictions(tableName: string) {

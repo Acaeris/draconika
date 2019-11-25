@@ -1,6 +1,4 @@
 <div class="ui notepad">
-  <div class="ui segment">
-    <h4 class="ui header">{{ 'PAGES.NOTEPAD.TITLE' | translate }}</h4>
-  </div>
+  <h4 class="ui block header">{{ campaignService.campaign.name }} - {{ 'PAGES.NOTEPAD.TITLE' | translate }}</h4>
   <ckeditor [editor]="Editor" [config]="notepadConfig" [(ngModel)]="campaignService.campaign.notepad"></ckeditor>
 </div>

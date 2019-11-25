@@ -1,4 +1,5 @@
 import { RollParts } from './roll-parts';
+import { RollSet } from './roll-set';
 
 export interface RollCollection {
   version: string;
@@ -7,4 +8,5 @@ export interface RollCollection {
   library?: boolean;
   uses?: string[];
   parts: RollParts;
+  set: RollSet;
 }

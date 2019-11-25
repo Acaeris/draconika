@@ -17,12 +17,12 @@
 /* Prototype */
 .ui.table {
   width: 100%;
-  background: #3a4149;
+  background: #27304b;
   margin: 1em 0;
-  border: 1px solid #23282c;
+  border: 1px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-radius: 0;
+  border-radius: 0.28571429rem;
   text-align: left;
   vertical-align: middle;
   color: #e4e7ea;
@@ -76,13 +76,13 @@
   border-left: none;
 }
 .ui.table > thead > tr:first-child > th:first-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0.28571429rem 0 0 0;
 }
 .ui.table > thead > tr:first-child > th:last-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0.28571429rem 0 0;
 }
 .ui.table > thead > tr:first-child > th:only-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 
 /* Footer */
@@ -92,7 +92,7 @@
 }
 .ui.table > tfoot > tr > th {
   cursor: auto;
-  border-top: 1px solid #23282c;
+  border-top: 1px solid transparent;
   background: #F9FAFB;
   text-align: inherit;
   color: #e4e7ea;
@@ -106,13 +106,13 @@
   border-left: none;
 }
 .ui.table > tfoot > tr:first-child > th:first-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0.28571429rem;
 }
 .ui.table > tfoot > tr:first-child > th:last-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.28571429rem 0;
 }
 .ui.table > tfoot > tr:first-child > th:only-child {
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 
 /* Table Row */
@@ -247,8 +247,8 @@
   border-right: none;
 }
 .ui.structured.sortable.table > thead > tr > th {
-  border-left: 1px solid #23282c;
-  border-right: 1px solid #23282c;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 .ui.structured.basic.table > tr > th,
 .ui.structured.basic.table > thead > tr > th,
@@ -316,14 +316,14 @@
 
 /* Fix 2nd Column */
 .ui.definition.table > thead:not(.full-width) > tr > th:nth-child(2) {
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
 }
 .ui.definition.table > tfoot:not(.full-width) > tr > th:nth-child(2) {
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
 }
 .ui.definition.table > tr > td:nth-child(2),
 .ui.definition.table > tbody > tr > td:nth-child(2) {
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
 }
 
 
@@ -613,7 +613,7 @@
   margin-bottom: 0;
   top: 0;
   margin-top: 1em;
-  border-radius: 0 0 0 0;
+  border-radius: 0.28571429rem 0.28571429rem 0 0;
 }
 .ui.table[class*="top attached"]:first-child {
   margin-top: 0;
@@ -627,7 +627,7 @@
   margin-bottom: 1em;
   -webkit-box-shadow: none, none;
           box-shadow: none, none;
-  border-radius: 0 0 0 0;
+  border-radius: 0 0 0.28571429rem 0.28571429rem;
 }
 .ui[class*="bottom attached"].table:last-child {
   margin-bottom: 0;
@@ -641,7 +641,7 @@
 /* Table Striping */
 .ui.striped.table > tr:nth-child(2n),
 .ui.striped.table > tbody > tr:nth-child(2n) {
-  background-color: #373e45;
+  background-color: #1c2238;
 }
 
 /* Stripes */
@@ -670,16 +670,16 @@
 --------------------*/
 
 .ui.primary.table {
-  border-top: 0.2em solid #20a8d8;
+  border-top: 0.2em solid #8f51f5;
 }
 .ui.inverted.primary.table {
-  background-color: #20a8d8;
+  background-color: #8f51f5;
   color: #FFFFFF;
 }
 .ui.ui.ui.ui.table tr.primary,
 .ui.ui.table td.primary {
-  -webkit-box-shadow: 0 0 0 #1985ac inset;
-          box-shadow: 0 0 0 #1985ac inset;
+  -webkit-box-shadow: 0 0 0 #7021f2 inset;
+          box-shadow: 0 0 0 #7021f2 inset;
   background: #ddf4ff;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -1098,7 +1098,7 @@
 .ui.sortable.table > thead > tr > th {
   cursor: pointer;
   white-space: nowrap;
-  border-left: 1px solid #23282c;
+  border-left: 1px solid transparent;
   color: #e4e7ea;
 }
 .ui.sortable.table > thead > tr > th:first-child {
@@ -1235,7 +1235,7 @@
 
 .ui.basic.table {
   background: transparent;
-  border: 1px solid #23282c;
+  border: 1px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1406,3 +1406,6 @@
          Site Overrides
 *******************************/
 
+.ui.attached.table {
+  border: none;
+}

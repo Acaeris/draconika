@@ -239,14 +239,14 @@ i.inverted.icon {
 --------------------*/
 
 i.primary.icon.icon.icon.icon {
-  color: #20a8d8;
+  color: #8f51f5;
 }
 i.inverted.primary.icon.icon.icon.icon {
   color: #54C8FF;
 }
 i.inverted.bordered.primary.icon.icon.icon.icon,
 i.inverted.circular.primary.icon.icon.icon.icon {
-  background-color: #20a8d8;
+  background-color: #8f51f5;
   color: #FFFFFF;
 }
 i.secondary.icon.icon.icon.icon {
