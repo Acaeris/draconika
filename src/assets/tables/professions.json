@@ -25,7 +25,7 @@
         { "value": "Galley Chief" },
         { "value": "Herald" },
         { "value": "Hex Priest" },
-        { "value": "Huntress" },
+        { "value": "Hierophant" },
         { "value": "Innkeeper" },
         { "value": "Justicar" },
         { "value": "Knight-Lieutenant" },
@@ -45,8 +45,10 @@
         { "value": "Skycaller" },
         { "value": "Skylord" },
         { "value": "Squallshaper" },
+        { "value": "Survivalist" },
         { "value": "Tender" },
         { "value": "Tracker" },
+        { "value": "Treewarden" },
         { "value": "Valewalker" },
         { "value": "Warden" },
         { "value": "Weaver" },
@@ -60,6 +62,7 @@
       },
       "entries": [
         { "value": "Father" },
+        { "value": "Hunter" },
         { "value": "Priest" },
         { "value": "Prince" }
       ]
@@ -68,6 +71,7 @@
         "gender": [ "female" ]
       },
       "entries": [
+        { "value": "Huntress" },
         { "value": "Mother" },
         { "value": "Priestess" },
         { "value": "Princess" },
