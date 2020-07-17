@@ -18,6 +18,7 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 import { GeneratorModule } from './components/generator/generator.module';
 import { SettingsModule } from './components/settings/settings.module';
+import { DungeonMapModule } from './components/dungeon-map/dungeon-map.module';
 
 import { CampaignService } from './providers/campaign.service';
 
@@ -44,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CKEditorModule,
     SettingsModule,
     GeneratorModule,
+    DungeonMapModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

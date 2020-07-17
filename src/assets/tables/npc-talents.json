@@ -1,0 +1,31 @@
+{
+  "init": "talents",
+  "version": "1.0.0",
+  "name": "NPC Talents",
+  "parts": {
+    "talents": [{
+      "entries": [
+        { "value": "Plays a musical instrument" },
+        { "value": "Speaks several languages fluently" },
+        { "value": "Unbelievably lucky" },
+        { "value": "Perfect memory" },
+        { "value": "Great with animals" },
+        { "value": "Great with children" },
+        { "value": "Great at solving puzzles" },
+        { "value": "Great at one game" },
+        { "value": "Great at impersonations" },
+        { "value": "Draws beautifully" },
+        { "value": "Paints beautifully" },
+        { "value": "Sings beautifully" },
+        { "value": "Drinks everyone under the table" },
+        { "value": "Expert carpenter" },
+        { "value": "Expert cook" },
+        { "value": "Expert dart thrower and rock skipper" },
+        { "value": "Expert juggler" },
+        { "value": "Skilled actor and master of disguise" },
+        { "value": "Skilled dancer" },
+        { "value": "Knows thieves' cant" }
+      ]
+    }]
+  }
+}

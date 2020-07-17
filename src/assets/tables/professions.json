@@ -26,6 +26,8 @@
         { "value": "Herald" },
         { "value": "Hex Priest" },
         { "value": "Hierophant" },
+        { "value": "High Ranger" },
+        { "value": "Hippogryph Lord" },
         { "value": "Innkeeper" },
         { "value": "Justicar" },
         { "value": "Knight-Lieutenant" },
@@ -54,7 +56,8 @@
         { "value": "Weaver" },
         { "value": "Wildcrafter" },
         { "value": "Wildwatcher" },
-        { "value": "Windcaller" }
+        { "value": "Windcaller" },
+        { "value": "Wing Commander" }
       ]
     }, {
       "restrictions": {

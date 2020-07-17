@@ -1,0 +1,29 @@
+{
+  "init": "mannerisms",
+  "version": "1.0.0",
+  "name": "NPC Mannerisms",
+  "parts": {
+    "mannerisms": [{
+      "entries": [
+        { "value": "Prone to singing, whistling or humming quietly" },
+        { "value": "Speaks in rhyme or some other peculiar way"},
+        { "value": "Particularly low or high voice" },
+        { "value": "Slurs words, lisps or stutters" },
+        { "value": "Enunciates overly clearly" },
+        { "value": "Speaks loudly" },
+        { "value": "Whispers" },
+        { "value": "Uses flowery speech or long words" },
+        { "value": "Makes constant jokes or puns" },
+        { "value": "Prone to predictions of doom" },
+        { "value": "Fidgets" },
+        { "value": "Squints" },
+        { "value": "Stares into the distance" },
+        { "value": "Chews something" },
+        { "value": "Paces" },
+        { "value": "Taps fingers" },
+        { "value": "Bites fingernails" },
+        { "value": "Twirls hair or tugs beard" }
+      ]
+    }]
+  }
+}

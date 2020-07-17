@@ -82,6 +82,8 @@
     }],
     "suffix": [{
       "entries": [
+        { "value": ", Fury of the Stars" },
+        { "value": ", Grace of Elune" },
         { "value": ", Guardian of the Wild" },
         { "value": ", Keeper of the Silent Grove" },
         { "value": ", Knight Errant" },
@@ -119,6 +121,7 @@
         { "value": " the Reaper" },
         { "value": " the Silent" },
         { "value": " the Sleeper" },
+        { "value": " the Spry" },
         { "value": " the Sufferer" },
         { "value": " the Traitor" },
         { "value": " the Unmerciful" },

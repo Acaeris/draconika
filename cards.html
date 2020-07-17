@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <title>MTG Tokens</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/components/reset.min.css">
+    <style>
+      body {
+        font: 16px chronotype;
+      }
+
+      .mtg-card {
+        width: 525px;
+        height: 750px;
+        background: black;
+        border-radius: 8px;
+        display: flex;
+        flex-flow: column;
+        margin: 16px;
+      }
+
+      .mtg-card .header {
+        font: 16px handy00;
+        text-shadow: 1px 1px rgba(0,0,0,0.3);
+        margin: 3px 3px 0 3px;
+        border-radius: 6px 6px 0 0;
+      }
+
+      .mtg-card .header .row {
+        display: flex;
+      }
+
+      .mtg-card .header .text {
+        flex-grow: 1;
+      }
+
+      .mtg-card .text {
+        margin: 4px 8px;
+      }
+
+      .mtg-card.blue .header, .mtg-card.blue .type {
+        background: rgba(84,200,255,1);
+        color: #f1f1f1;
+      }
+
+      .mtg-card.green .header, .mtg-card.green .type {
+        background: rgba(23,156,77,1);
+        color: #f1f1f1;
+      }
+
+      .mtg-card.blue-red .header, .mtg-card.blue-red .type {
+        color: #f1f1f1;
+        background: linear-gradient(125deg, rgba(84,200,255,1) 0%, rgba(255,90,49,1) 100%);
+      }
+
+      .mtg-card .full-art {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column;
+        border-radius: 0 0 6px 6px;
+        margin: 0 3px 3px 3px;
+      }
+
+      .mtg-card .full-art .type {
+        margin: 1px 0;
+      }
+
+      .mtg-card.blue .full-art .type {
+        background: rgba(84,200,255,0.5);
+      }
+
+      .mtg-card .art {
+        flex-grow: 1;
+      }
+
+      .mtg-card .type {
+        text-shadow: 1px 1px rgba(0,0,0,0.3);
+        margin: 1px 3px;
+      }
+
+      .mtg-card .rule {
+        margin: 0 3px;
+      }
+
+      .mtg-card .rule.last {
+        margin-bottom: 3px;
+        border-radius: 0 0 6px 6px;
+      }
+
+      .mtg-card .rule .level-up {
+        display: flex;
+        align-items: center;
+      }
+
+      .mtg-card .rule .level-up .level {
+        background: rgba(255,255,255,0.5);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        border-radius: 0 4px 4px 0;
+        margin: 1px 0;
+      }
+
+      .mtg-card .rule.last .level-up .level {
+        border-radius: 0 4px 4px 4px;
+        text-align: center;
+      }
+
+      .mtg-card .rule .level-up .pt {
+        background: rgba(255,255,255,0.5);
+        border-radius: 4px 0 0 4px;
+        margin: 1px 0;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        text-align: center;
+      }
+
+      .mtg-card .rule.last .level-up .pt {
+        border-radius: 4px 0 4px 4px;
+      }
+
+      .mtg-card.blue .rule {
+        background: rgba(218,243,255,1);
+      }
+
+      .mtg-card.green .rule {
+        background: rgba(208,235,219,1);
+      }
+
+      .mtg-card.blue-red .rule {
+        background: linear-gradient(125deg, rgba(218,243,255,1) 0%, rgba(255,214,204,1) 100%);
+      }
+
+      .fill-col {
+        flex-grow: 1;
+      }
+
+      .mana {
+        margin: 5px 6px;
+        display: flex;
+      }
+
+      .mana div {
+        border-radius: 7px;
+        width: 14px;
+        height: 14px;
+        margin: 0 1px 0 0;
+      }
+
+      .colorless {
+        font: 16px chronotype;
+        padding: 2px 0 0 0;
+        color: black;
+        text-shadow: none;
+        background: #f1f1f1;
+        text-align: center;
+      }
+
+      .mana .blue {
+        background: url(blue.png);
+        background-position: -3px;
+        background-size: 20px;
+      }
+
+      .mana .red {
+        background: url(red.png);
+        background-position: -3px;
+        background-size: 20px;
+      }
+
+      .mana .green {
+        background: url(green.png);
+        background-position: -3px;
+        background-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mtg-card blue">
+      <div class="header">
+        <div class="row">
+          <div class="text">Echo Mage</div>
+          <div class="mana">
+            <div class="colorless">1</div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+          </div>
+        </div>
+      </div>
+      <div class="full-art" style="
+      background: url(https://i.redd.it/cdmv0rqty7521.png);
+      background-position: -10px -20px;
+      background-size: 200px auto;">
+        <div class="art"></div>
+        <div class="type">
+          <div class="text">Creature - Human Wizard</div>
+        </div>
+        <div class="rule">
+          <div class="level-up">
+            <div class="fill-col">
+              <div style="margin: 7px 8px;">Level up
+                <div style="display: inline-block;">
+                  <div class="mana" style="margin: 0;">
+                    <div class="colorless">1</div>
+                    <div class="blue"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt">
+              <div class="text">2/3</div>
+            </div>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="level-up">
+            <div class="level">
+              <div class="text" style="white-space: nowrap;">2-3</div>
+            </div>
+            <div class="fill-col">
+              <div class="text">
+                <div style="display: inline-block;">
+                  <div class="mana" style="margin: 0;">
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                  </div>
+                </div>
+                , {T}: Copy target instant or sorcery spell. You may choose new targets for the copy.</div>
+            </div>
+            <div class="pt">
+              <div style="margin: 4px 8px;">2/4</div>
+            </div>
+          </div>
+        </div>
+        <div class="rule last">
+          <div class="level-up">
+            <div class="level" style="width: 52px;">
+              <div class="text">4+</div>
+            </div>
+            <div class="fill-col">
+              <div class="text">
+                <div style="display: inline-block;">
+                  <div class="mana" style="margin: 0;">
+                    <div class="blue"></div>
+                    <div class="blue"></div>
+                  </div>
+                </div>
+                , {T}: Copy target instant or sorcery spell twice. You may choose new targets for the copies.</div>
+            </div>
+            <div class="pt">
+              <div class="text">2/5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mtg-card blue-red">
+      <div class="header">
+        <div class="row">
+          <div class="text">Goblin Electromancer</div>
+          <div class="mana">
+            <div class="blue"></div>
+            <div class="red"></div>
+          </div>
+        </div>
+      </div>
+      <div class="art"></div>
+      <div class="type">
+        <div class="text">Creature - Goblin Wizard</div>
+      </div>
+      <div class="rule">
+        <div class="text">Instant and sorcery spells you cast cost <div style="display: inline-block;">
+          <div class="mana" style="margin: 0;">
+            <div class="colorless">1</div>
+          </div>
+        </div> less to cast.</div>
+      </div>
+      <div class="rule last">
+        <div class="level-up">
+          <div class="fill-col">
+            <div class="text"></div>
+          </div>
+          <div class="pt">
+            <div class="text">2/2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mtg-card green">
+      <div class="header">
+        <div class="row">
+          <div class="text">Eternal Witness</div>
+          <div class="mana">
+            <div class="colorless">1</div>
+            <div class="green"></div>
+            <div class="green"></div>
+          </div>
+        </div>
+      </div>
+      <div class="art"></div>
+      <div class="type">
+        <div class="text">Creature - Human Shaman</div>
+      </div>
+      <div class="rule">
+        <div class="text">When Eternal Witness enters the battlefield, you may return target card from your graveyard to your hand.</div>
+      </div>
+      <div class="rule last">
+        <div class="level-up">
+          <div class="fill-col">
+            <div class="text"></div>
+          </div>
+          <div class="pt">
+            <div class="text">2/1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
